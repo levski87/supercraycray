@@ -1,0 +1,51 @@
+body ul#shareit { 
+ position: fixed;
+ float: left; 
+ background: #434343; 
+ padding: 0;
+ text-align: center;
+ border: 1px solid #ccc;
+ list-style: none; 
+ margin: 0;
+ z-index: 99;
+ -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+ }
+ body ul#shareit.shareit-left { 
+ position: fixed;
+ float: left; 
+ background: #434343; 
+ padding: 0;
+ text-align: center;
+-webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+
+-webkit-border-top-left-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+ list-style: none; 
+ z-index: 99;
+ border:none;
+ }
+ .linkback a,  .linkback a:link, .linkback a:active, .linkback a:visited
+ {
+	font-size:10px;
+	text-decoration:none;
+	color:#ececec;
+ }
+ 
+body ul#shareit li { display: block; margin: 5px; padding: 0; overflow: hidden; text-align: center; 
+	background:none;
+}
+a.email {
+color:#fff;
+}
+

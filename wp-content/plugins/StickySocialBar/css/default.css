@@ -1,0 +1,35 @@
+body ul#shareit { 
+ position: fixed;
+ float: left; 
+ background: #fff; 
+ padding: 14px 0px;
+ text-align: center;
+ 
+ list-style: none; 
+ margin: 0;
+ z-index: 99;
+
+ }
+ body ul#shareit.shareit-left { 
+ position: fixed;
+ float: left; 
+ background: #fff; 
+ padding: 0;
+ text-align: center;
+ list-style: none; 
+ z-index: 99;
+ border:none;
+ }
+ .linkback a
+ {
+	font-size:10px;
+	text-decoration:none;
+ }
+ a.email {
+ color: #666666;
+ }
+ 
+body ul#shareit li { display: block; margin: 5px; padding: 0; overflow: hidden; text-align: center; 
+	background:none;
+}
+

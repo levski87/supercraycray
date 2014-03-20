@@ -1,0 +1,20 @@
+.DS_Store
+.buildpath
+.project
+.settings/
+.idea/
+*.iml
+wp-config.php
+wp-config.php.*
+!.gitkeep
+wp-content/uploads/*
+
+
+
+# W3TC stuff -- I should find the proper things to ignore from w3tc plugin
+wp-content/db.php
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/object-cache.php
+wp-content/w3tc-config/
+wp-content/cache/
