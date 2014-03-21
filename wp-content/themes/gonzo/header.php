@@ -75,7 +75,8 @@ $omc_top_menu = get_option_tree('omc_top_menu', $theme_options, false);
 				<h1><a id="omc-logo" href="<?php echo home_url();?>"><img src="<?php echo home_url();?>/wp-content/uploads/2014/01/supercraycray_bigger.png" width="235" /></a></h1>
 				
 				<?php if ( ! dynamic_sidebar( 'Header Banner' ) ) :  endif; ?>
-					
+				
+				<?php /*	
 				<nav id="omc-main-navigation">				
 				
 					<?php if ( has_nav_menu( 'primary' ) ) { ?>
@@ -101,6 +102,7 @@ $omc_top_menu = get_option_tree('omc_top_menu', $theme_options, false);
 					</div>	
 						
 				</nav>
+				*/?>
 				
 				<br class="clear" />				
 				
