@@ -7,11 +7,11 @@
 		
 		.omc-over-480 {display:block;}	
 		
-		#omc-container {width:990px; padding:30px 0px 0px 40px ;}
-		
+		#omc-container {width:1040px !important; padding:30px 0px 0px 40px ;}
+			
 			section#omc-main {width:660px; float:left; }
 
-			section#omc-sidebar {width:330px; float:left; }
+			section#omc-sidebar {width:380px; padding-left: float:left; }
 				
 				.omc-half-width-category {width:290px; float:left; margin:0px 40px 40px 0px;  }
 

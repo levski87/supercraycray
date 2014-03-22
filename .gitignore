@@ -8,6 +8,7 @@ wp-config.php
 wp-config.php.*
 !.gitkeep
 wp-content/uploads/*
+wp-content/plugins/db-cache-reloaded-fix/cache/*
 
 
 
