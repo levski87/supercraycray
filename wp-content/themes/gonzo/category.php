@@ -8,9 +8,9 @@
 	if ($category_featured_enabled == 'on') { get_template_part('loop', 'module-flex'); } else { ?>
 
 	<div class="omc-cat-top">
-<?php /*
-	<h1><?php _e('Browsing the', 'gonzo');?> <em>"<?php $thisCat = get_category(get_query_var('cat'),false); print_r($thisCat->name);?>"</em> <?php _e('Category', 'gonzo');?> </h1></div>	
+<?php /*	<h1><?php _e('Browsing the', 'gonzo');?> <em>"<?php $thisCat = get_category(get_query_var('cat'),false); print_r($thisCat->name);?>"</em> <?php _e('Category', 'gonzo');?> </h1>
 */ ?>
+</div>	
 	<?php } ?>
 	
 	<?php // Determine whether to use a preset blog style or echo content (with shortcodes)
