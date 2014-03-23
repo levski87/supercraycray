@@ -76,7 +76,7 @@ $omc_top_menu = get_option_tree('omc_top_menu', $theme_options, false);
 				
 				<?php if ( ! dynamic_sidebar( 'Header Banner' ) ) :  endif; ?>
 				
-				<?php /*	
+					
 				<nav id="omc-main-navigation">				
 				
 					<?php if ( has_nav_menu( 'primary' ) ) { ?>
@@ -102,7 +102,6 @@ $omc_top_menu = get_option_tree('omc_top_menu', $theme_options, false);
 					</div>	
 						
 				</nav>
-				*/?>
 				
 				<br class="clear" />				
 				

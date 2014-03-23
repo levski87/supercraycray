@@ -96,6 +96,8 @@ $url = (!empty($_SERVER['HTTPS'])) ? "https://" . $_SERVER['SERVER_NAME'] . $_SE
     <?php if ($omc_criteria_display == 'b' || $omc_criteria_display == 'n' || $omc_criteria_display == '') {
         the_content();
     } ?>
+
+    <?php /*
     <form method="post" action="<?php echo home_url()?>/subsribe/">
     	<h4>Subscribe</h4>
     	<input type="hidden" name="ip" value="<?php echo get_ip()?>">
@@ -104,6 +106,7 @@ $url = (!empty($_SERVER['HTTPS'])) ? "https://" . $_SERVER['SERVER_NAME'] . $_SE
 		<p><input type="submit" name="subscribe" value="Subscribe">&nbsp;
 		<input type="submit" name="unsubscribe" value="Unsubscribe"></p>
 	</form>
+    */ ?>
     
 
     <?php if ($omc_criteria_display !== 'n') { ?>
