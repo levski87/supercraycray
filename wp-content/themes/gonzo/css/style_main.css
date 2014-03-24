@@ -132,7 +132,7 @@ body { background-color:#000; font-size:12px; font-family: 'Open Sans', sans-ser
 	
 	/*==== navigation ====*/
 	
-	nav#omc-main-navigation {margin-bottom:30px; margin-top:20px; position:relative;}
+	nav#omc-main-navigation {margin-bottom:30px; margin-top:20px; position:relative; width:100% !important;}
 
 		nav#omc-main-navigation ul li {display:block; float:left; position:relative;}
 

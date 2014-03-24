@@ -38,6 +38,8 @@
 		.omc-resize-620 {width:620px;}
 		
 		nav#omc-main-navigation ul li a {font-size:1.5em;}
+
+		header {height: auto !important;}
 		
 		img#omc-logo {margin:0px 0px ;}
 		
