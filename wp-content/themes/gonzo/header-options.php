@@ -303,7 +303,7 @@ if ($show_on_front === 'posts' && empty($category_color)) {$category_color = $om
 
 @media only screen and (max-width: 480px) { /*Remove background for 320px displays*/
 	div#omc-transparent-layer {background:none;}
-	header {margin-bottom: 25px;}
+	header {margin-bottom: 20px;}
 }
 
 <?php
