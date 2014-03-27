@@ -767,6 +767,14 @@ article.omc-featured-post {position:relative; width:100%; height:310px; overflow
 		.pagination a {padding:10px 15px; margin-right:8px; text-align:center; background:#555; color:#FFF; -moz-transition:.8s linear; -webkit-transition:.8s ease-out; transition:.8s linear;}	
 			
 		.pagination a:hover {background:#aaa; color:#FFF;}	
+
+
+	.pagination-links {height:60px; text-align: center; font-size: 17px; font-weight: bold; height: 40px;}
+
+		.pagination-links a {text-decoration: underline !important; margin-right: 10px;}
+
+
+		
 		
 		
  /* =============================================================================

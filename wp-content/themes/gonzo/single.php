@@ -93,9 +93,23 @@ $url = (!empty($_SERVER['HTTPS'])) ? "https://" . $_SERVER['SERVER_NAME'] . $_SE
 
 <h1 class="omc-post-heading-<?php echo $format;?>"><?php the_title();?></h1>
 
+<?php
+wp_link_pages(array(
+    'before' => '<div class="pagination-links">' . __(''),
+    'after' => '</div>',
+    'next_or_number' => '', # activate parameter overloading
+    'nextpagelink' => __('<span class="next-button">Next Slide</span>'),
+    'previouspagelink' => __('<span class="previous-button">Previous Slide</span>'),
+    'pagelink' => '%',
+    'echo' => 1 )
+);
+?>
+
     <?php if ($omc_criteria_display == 'b' || $omc_criteria_display == 'n' || $omc_criteria_display == '') {
         the_content();
     } ?>
+
+
 
     <?php /*
     <form method="post" action="<?php echo home_url()?>/subsribe/">
