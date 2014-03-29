@@ -321,6 +321,18 @@ wp_link_pages(array(
 </div>
 */ ?>
 
+<br>
+<?php if ($omc_comment_type === 'fb' || $omc_comment_type === 'both') { ?>
+
+<div class="fb-comments" data-href="<?php echo $url; ?>" data-num-posts="4" data-width="620"></div>
+
+    <?php } ?>
+
+<?php if ($omc_comment_type === 'wp' || $omc_comment_type === 'both' || $omc_comment_type == '') { ?>
+
+    <?php comments_template('', true); ?>
+
+    <?php } ?>
 
 <div id='taboola-below-main-column-mix'></div>
 <script type="text/javascript">
@@ -447,18 +459,6 @@ _taboola.push({flush:true});
 </div><!-- /omc-related-posts -->
 
 <br class="clear"/>
-
-<?php if ($omc_comment_type === 'fb' || $omc_comment_type === 'both') { ?>
-
-<div class="fb-comments" data-href="<?php echo $url; ?>" data-num-posts="4" data-width="620"></div>
-
-    <?php } ?>
-
-<?php if ($omc_comment_type === 'wp' || $omc_comment_type === 'both' || $omc_comment_type == '') { ?>
-
-    <?php comments_template('', true); ?>
-
-    <?php } ?>
 		
 	</article><!-- /omc-full-article -->
 
