@@ -304,6 +304,8 @@ wp_link_pages(array(
 
 <br class="clear"/>
 
+<?php /*
+
 <div class="omc-authorbox">
 
     <h4><?php _e('About the Author', 'gonzo');?></h4>
@@ -314,10 +316,24 @@ wp_link_pages(array(
 
     <p><?php the_author_posts_link(); ?> <?php the_author_meta('description'); ?></p>
 
+
+
 </div>
+*/ ?>
 
+
+<div id='taboola-below-main-column-mix'></div>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({mode:'thumbs-2r', container:'taboola-below-main-column-mix', placement:'below-main-column', target_type:'mix'});
+</script>
+
+<script>
+window._taboola = window._taboola || [];
+_taboola.push({article:'auto'}); 
+_taboola.push({flush:true});
+</script>
 <br class="clear" />
-
 <div class="omc-related-posts">
 
     <h4><?php _e('Related Posts', 'gonzo'); ?></h4>

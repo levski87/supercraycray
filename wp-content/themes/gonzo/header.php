@@ -43,6 +43,16 @@ $omc_top_menu = get_option_tree('omc_top_menu', $theme_options, false);
 	</noscript>	
 	
 	<?php get_template_part('header-options');?>
+
+	<script type="text/javascript">
+ window._taboola = window._taboola || [];
+_taboola.push({article:'auto'}); 
+!function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+}(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/supercraycray/loader.js');
+</script>
 	
 </head>
 

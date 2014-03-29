@@ -526,9 +526,9 @@ article.omc-featured-post {position:relative; width:100%; height:310px; overflow
 		
 	/*==== related posts ====*/
 	
-	div.omc-related-posts {margin-bottom:20px;  margin-top:25px; width:650px; }
+	div.omc-related-posts {margin-bottom:20px;  margin-top:0px; width:650px; }
 		
-		#omc-full-article div.omc-related-posts h4 { font-weight:700; margin-bottom:25px; }
+		#omc-full-article div.omc-related-posts h4 { font-weight:700; margin-bottom:10px; }
 		
 		article.omc-related-post {float:left; margin-bottom:0px;}
 		
