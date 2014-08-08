@@ -108,6 +108,7 @@ function warta_scripts() {
                 // Backup file
                 wp_enqueue_style( 'warta-style', get_template_directory_uri() . "/css/style.min.css"  );
         }
+        wp_enqueue_style('custom-styles', get_template_directory_uri() . '/css/custom.css');
         
         if(is_rtl()) {
                 wp_enqueue_style( 'warta-style-rtl', get_template_directory_uri() . '/css/rtl.min.css', array('warta-style')  );
