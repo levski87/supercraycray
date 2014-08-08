@@ -69,9 +69,12 @@ $warta_review_box       = new Warta_Review_Box();
         
         // Pages
         wp_link_pages( array(
-                'before'        => '<div class="page-links">' . __( 'Pages:', 'warta' ),
+                'before'        => '<div class="page-links">' . __( '', 'warta' ),
                 'after'         => '</div>',
                 'link_before'   => '<span>',
+                'next_or_number'=> 'Next',
+                'nextpagelink'=> 'Next Page',
+                'previouspagelink' => 'Previous page',
                 'link_after'    => '</span>'
         ) ); ?>
 </article>
