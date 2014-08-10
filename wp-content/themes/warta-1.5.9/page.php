@@ -20,6 +20,9 @@ if( !!get_post_meta( $post->ID, 'warta_full_width_carousel_enable', TRUE) ) {
         $warta_full_width_carousel = new Warta_Posts_Carousel();
         $warta_full_width_carousel->widget(array('is_large' => TRUE), get_post_meta( $post->ID, 'warta_full_width_carousel_options', TRUE));
 } 
+?>
+
+<?php /*
 // Page title
 else {        
         if(is_front_page()) {
@@ -27,7 +30,7 @@ else {
         } else { 
                 warta_page_title( get_the_title(), '' ); 
         }
-} ?>
+} */ ?>
 </header>
 
 <div id="content">

@@ -18,13 +18,9 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
 
     <div id="title">
         <div class="image-light"></div>
-        <div class="container"> 
-
-            <?php /*
+        <div class="container">
             <div class="title-container">
-
                 
-
                 <?php if($one_line) : ?>
                 
                     <h1>
@@ -47,27 +43,14 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
                         <p class="secondary"><?php echo $secondary ?></p>
                     <?php endif ?>
                         
-                <?php endif ?>   
-
-
+                <?php endif ?>
+                    
             </div>
-            */ ?> 
-             <div id="adunit-leader">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- leaderboard -->
-                        <ins class="adsbygoogle"
-                                 style="display:inline-block;width:728px;height:90px"
-                                 data-ad-client="ca-pub-4528087481844577"
-                                 data-ad-slot="2271573049"></ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-
         </div>
     </div>
 
     <?php
 }
 endif; // warta_page_title
+
 

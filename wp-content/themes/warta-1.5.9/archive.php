@@ -68,6 +68,6 @@ if( !!$term_description ) {
         $secondary  = strip_tags( $term_description );
 }
 
-warta_page_title( $primary, $secondary, $term_description ? 0 : 1 ); // print page title
+/* warta_page_title( $primary, $secondary, $term_description ? 0 : 1 ); // print page title */
 
 get_template_part('content', 'archive');
