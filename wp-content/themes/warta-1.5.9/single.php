@@ -30,6 +30,7 @@ warta_page_title(
                                         // Content
                                         get_template_part( 'content', 'single' ); 
 
+/*
                                         // Share buttons
                                         if( isset( $friskamax_warta['singular_share_buttons'] ) && !!$friskamax_warta['singular_share_buttons'] ) : ?>
                                                 <section class="clearfix" 
@@ -37,7 +38,7 @@ warta_page_title(
                                                          data-permalink="<?php the_permalink() ?>"
                                                          data-title="<?php the_title() ?>">
                                                 </section>
-<?php                                   endif;
+<?php                                   endif; */
 
                                         // Post tags
                                         if( $friskamax_warta['singular_post_meta']['tags'] && get_the_tags() ) : ?>
