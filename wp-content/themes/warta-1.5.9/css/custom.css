@@ -27,6 +27,7 @@
   text-align: center;
   height: auto;
   background-image: none !important;
+  font-size: 0px;
 }
 
 .flex-video {
