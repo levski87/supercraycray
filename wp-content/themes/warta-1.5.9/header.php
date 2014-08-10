@@ -23,6 +23,17 @@ global  $friskamax_warta,
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<script type="text/javascript">
+ window._taboola = window._taboola || [];
+_taboola.push({article:'auto'}); 
+!function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+}(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/supercraycray/loader.js');
+</script>
+
 <?php wp_head(); ?>
 </head>
 

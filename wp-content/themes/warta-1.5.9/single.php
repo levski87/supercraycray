@@ -51,7 +51,8 @@ warta_page_title(
 <?php                                   endif; 
 
                                         // Prev/next post navigation
-                                        warta_post_nav();
+                                        //warta_post_nav();
+                                        taboola();
 
                                         // Author
                                         if( isset( $friskamax_warta['singular_author_info'] ) && !!$friskamax_warta['singular_author_info'] ) : ?>
