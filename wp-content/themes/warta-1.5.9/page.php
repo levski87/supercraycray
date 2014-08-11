@@ -22,7 +22,7 @@ if( !!get_post_meta( $post->ID, 'warta_full_width_carousel_enable', TRUE) ) {
 } 
 ?>
 
-<?php /*
+<?php 
 // Page title
 else {        
         if(is_front_page()) {
@@ -30,7 +30,7 @@ else {
         } else { 
                 warta_page_title( get_the_title(), '' ); 
         }
-} */ ?>
+} ?>
 </header>
 
 <div id="content">
