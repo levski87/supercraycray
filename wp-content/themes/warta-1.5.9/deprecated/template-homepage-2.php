@@ -11,7 +11,7 @@ $friskamax_warta_var['html_id']   = 'home-version-2'; // Set html ID
 
 get_header();
 
-warta_page_title( get_bloginfo('name'), get_bloginfo('description') ); // print page title
+// warta_page_title( get_bloginfo('name'), get_bloginfo('description') ); // print page title
 ?>
 
 </header><!--header-->
