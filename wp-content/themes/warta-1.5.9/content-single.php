@@ -32,7 +32,17 @@ $warta_review_box       = new Warta_Review_Box();
                         echo warta_post_meta();                
                         echo '<hr>';
                 }                 
-        endif; 
+        endif;
+        // Link pages
+                    wp_link_pages( array(
+                'before'        => '<div class="page-links">' . __( '', 'warta' ),
+                'after'         => '</div>',
+                'link_before'   => '<span>',
+                'next_or_number'=> 'Next',
+                'nextpagelink'=> 'Next →',
+                'previouspagelink' => '← Previous',
+                'link_after'    => '</span>'
+        ) );  
                 
         // Review box & content
         if( $warta_review_box->position() == 'top' ) { 
