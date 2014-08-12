@@ -73,8 +73,8 @@ $warta_review_box       = new Warta_Review_Box();
                 'after'         => '</div>',
                 'link_before'   => '<span>',
                 'next_or_number'=> 'Next',
-                'nextpagelink'=> 'Next Page',
-                'previouspagelink' => 'Previous page',
+                'nextpagelink'=> 'Next →',
+                'previouspagelink' => '← Previous',
                 'link_after'    => '</span>'
         ) ); ?>
 </article>
