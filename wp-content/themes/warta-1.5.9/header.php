@@ -25,37 +25,13 @@ global  $friskamax_warta,
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <script type="text/javascript">
- window._taboola = window._taboola || [];
+ window ._taboola = window._taboola || [];
 _taboola.push({article:'auto'}); 
 !function (e, f, u) {
     e.async = 1;
     e.src = u;
     f.parentNode.insertBefore(e, f);
 }(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/supercraycray/loader.js');
-</script>
-
-<script type='text/javascript'>
-var googletag = googletag || {};
-googletag.cmd = googletag.cmd || [];
-(function() {
-var gads = document.createElement('script');
-gads.async = true;
-gads.type = 'text/javascript';
-var useSSL = 'https:' == document.location.protocol;
-gads.src = (useSSL ? 'https:' : 'http:') + 
-'//www.googletagservices.com/tag/js/gpt.js';
-var node = document.getElementsByTagName('script')[0];
-node.parentNode.insertBefore(gads, node);
-})();
-</script>
-
-<script type='text/javascript'>
-googletag.cmd.push(function() {
-googletag.defineSlot('/38082785/supercraycray_global_atf', [[728, 90], [970, 90]], 'div-gpt-ad-1407814575245-0').addService(googletag.pubads());
-googletag.defineSlot('/38082785/supercraycray_global_box', [[160, 600], [300, 250], [300, 600], [300, 1050], [336, 280]], 'div-gpt-ad-1407814575245-1').addService(googletag.pubads());
-googletag.pubads().enableSingleRequest();
-googletag.enableServices();
-});
 </script>
 
 <?php wp_head(); ?>
@@ -172,10 +148,13 @@ googletag.enableServices();
                         </div><!--.container-->
                 </nav><!--#main-nav-->
 <div id="adunit-leader">
-                  <!-- supercraycray_global_atf -->
-<div id='div-gpt-ad-1407742003508-0'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1407742003508-0'); });
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4528087481844577"
+     data-ad-slot="2271573049"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div>
                 </div>
