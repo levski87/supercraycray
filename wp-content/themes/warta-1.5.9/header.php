@@ -173,7 +173,7 @@ googletag.enableServices();
                 </nav><!--#main-nav-->
 <div id="adunit-leader">
 <!-- supercraycray_global_atf -->
-<div id='div-gpt-ad-1407824428136-0' style='width:728px; height:90px;'>
+<div id='div-gpt-ad-1407824428136-0'>
 <script type='text/javascript'>
 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1407824428136-0'); });
 </script>
