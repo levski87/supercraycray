@@ -68,13 +68,8 @@
 }
 
 .page-links a {
-  width:100%;
+  width:45%;
   padding-top: 25px !important;
   padding-bottom: 25px !important;
   font-size: 48px !important;
-  background-color: #ffd728 !important;
-
-.page-links a:hover;
-  font-color: none !important;
-
 }
