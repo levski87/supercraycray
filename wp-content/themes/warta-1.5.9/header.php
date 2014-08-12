@@ -52,7 +52,7 @@ node.parentNode.insertBefore(gads, node);
 <script type='text/javascript'>
 googletag.cmd.push(function() {
 googletag.defineSlot('/38082785/supercraycray_global_atf', [728, 90], 'div-gpt-ad-1407824428136-0').addService(googletag.pubads());
-googletag.defineSlot('/38082785/supercraycray_global_box', [[300, 250], [300, 600], [336, 280]], 'div-gpt-ad-1407824428136-1').addService(googletag.pubads());
+googletag.defineSlot('/38082785/supercraycray_global_box', [[300, 600], [336, 280]], 'div-gpt-ad-1407824428136-1').addService(googletag.pubads());
 googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
