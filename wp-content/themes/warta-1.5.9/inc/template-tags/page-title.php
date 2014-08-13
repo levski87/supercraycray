@@ -33,6 +33,12 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
                         <?php endif ?>
                     </h1>
                 
+                <?php elseif (is_single()) : ?>
+                
+                    <?php if( !empty($primary) ) : ?>
+                        <h1 class="primary"><?php echo $primary ?></h1>
+                    <?php endif ?>
+                    
                 <?php else : ?>
                 
                     <?php if( !empty($primary) ) : ?>
@@ -41,8 +47,7 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
 
                     <?php if( !empty($secondary) ) : ?>
                         <p class="secondary"><?php echo $secondary ?></p>
-                    <?php endif ?>
-                        
+                    <?php endif ?>        
                 <?php endif ?>
                     
             </div>
