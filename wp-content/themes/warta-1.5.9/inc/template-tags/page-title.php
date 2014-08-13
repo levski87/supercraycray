@@ -36,7 +36,7 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
                 <?php elseif (is_single()) : ?>
                 
                     <?php if( !empty($primary) ) : ?>
-                        <h1 class="primary"><?php echo $primary ?></h1>
+                        <h1 class="primary" style="color: black !important;"><?php echo $primary ?></h1>
                     <?php endif ?>
                     
                 <?php else : ?>
