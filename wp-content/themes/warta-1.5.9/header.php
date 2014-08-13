@@ -24,6 +24,7 @@ global  $friskamax_warta,
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53eaeb1319248feb"></script>
 <script type="text/javascript">
  window ._taboola = window._taboola || [];
 _taboola.push({article:'auto'}); 

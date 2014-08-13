@@ -43,7 +43,11 @@ $warta_review_box       = new Warta_Review_Box();
                 'previouspagelink' => '← Previous',
                 'link_after'    => '</span>'
         ) );  
-                
+?>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox"></div>
+
+<?php
         // Review box & content
         if( $warta_review_box->position() == 'top' ) { 
                 $format = get_post_format();
