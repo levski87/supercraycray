@@ -14,6 +14,7 @@ SHARE BUTTONS STYLES
 .sswpds-social-wrap {
 	overflow: hidden;
 	margin-bottom: 30px;
+	text-align: center;
 }
 	.sswpds-social-wrap:last-child {
 		padding-top: 10px;
