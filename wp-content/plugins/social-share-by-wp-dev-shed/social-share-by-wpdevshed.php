@@ -25,7 +25,7 @@ add_action('wp_enqueue_scripts', 'sswpds_script_styles');
  */
 function sswpds_filter_the_content( $content ) {
 	$new_content = '<div class="sswpds-social-wrap">' . "\n";
-	$new_content .= '<a href="' . esc_url('http://www.facebook.com/share.php?u=') . get_permalink() . '" target="_blank"><img src="' . plugin_dir_url(__FILE__) . 'images/icon-fb.png' . '" alt=""/></a>' . "\n";
+	$new_content .= '<a href="' . esc_url('http://www.facebook.com/share.php?u=') . get_permalink() . '" target="_blank">  <button type="button" class="btn btn-default"> Share on Facebook</button></a>' . "\n";
 	// $new_content .= '<a href="' . esc_url('http://twitter.com/home?status=') . get_the_title() . esc_attr('%0D%0A') . get_permalink() . '" target="_blank"><img src="' . plugin_dir_url(__FILE__) . 'images/icon-tw.png' . '" alt="" /></a>' . "\n";
 	$new_content .= '</div>' . "\n";
     $custom_content = $new_content . $content . $new_content;
