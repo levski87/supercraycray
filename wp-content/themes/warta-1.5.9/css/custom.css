@@ -110,7 +110,7 @@
   line-height: 50px !important;
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .sswpds-social-wrap a {
   display: inline-block;
   -webkit-box-sizing: border-box; 
