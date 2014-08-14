@@ -13,7 +13,6 @@ SHARE BUTTONS STYLES
 ******************************************************************/
 .sswpds-social-wrap {
 	overflow: hidden;
-	margin-bottom: 30px;
 	text-align: center;
 
 }
@@ -32,7 +31,7 @@ SHARE BUTTONS STYLES
 	text-decoration: none !important;
 	color: white !important;
 	background-color: #3b5998 !important;
-	width: 100% !important;
+	width: 98% !important;
 	height: 50px !important;
 	font-size: 35px !important;
 }
