@@ -35,6 +35,7 @@ _taboola.push({article:'auto'});
 }(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/supercraycray/loader.js');
 </script>
 
+<!-- Google Ads -->
 <script type='text/javascript'>
 var googletag = googletag || {};
 googletag.cmd = googletag.cmd || [];
@@ -52,12 +53,14 @@ node.parentNode.insertBefore(gads, node);
 
 <script type='text/javascript'>
 googletag.cmd.push(function() {
-googletag.defineSlot('/38082785/supercraycray_global_atf', [[728, 90], [300, 100], [320, 50]], 'div-gpt-ad-1407988290094-0').addService(googletag.pubads());
+googletag.defineSlot('/38082785/supercraycray_global_atf', [[300, 100], [320, 50], [728, 90]], 'div-gpt-ad-1407988290094-0').addService(googletag.pubads());
 googletag.defineSlot('/38082785/supercraycray_global_box', [[300, 600], [336, 280]], 'div-gpt-ad-1407988290094-1').addService(googletag.pubads());
 googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
+
+<!-- End Google Ads-->
 
 <?php wp_head(); ?>
 </head>
