@@ -28,7 +28,7 @@ function sswpds_filter_the_content( $content ) {
 	$new_content .= '<a href="' . esc_url('http://www.facebook.com/share.php?u=') . get_permalink() . '" target="_blank"> <i class="fa fa-facebook-square"></i> Share on Facebook</a>' . "\n";
 	// $new_content .= '<a href="' . esc_url('http://twitter.com/home?status=') . get_the_title() . esc_attr('%0D%0A') . get_permalink() . '" target="_blank"><img src="' . plugin_dir_url(__FILE__) . 'images/icon-tw.png' . '" alt="" /></a>' . "\n";
 	$new_content .= '</div>' . "\n";
-    $custom_content = $new_content . $content . $new_content;
+    $custom_content = $new_content . $content;
 	if ( is_single() ) {
     	return $custom_content;
 	} else {
