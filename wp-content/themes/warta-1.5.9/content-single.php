@@ -91,4 +91,15 @@ $warta_review_box       = new Warta_Review_Box();
                 'previouspagelink' => '← Previous',
                 'link_after'    => '</span>'
         ) ); ?>
+<!-- 336 x 280 Bottom -->
+<div style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-4528087481844577"
+     data-ad-slot="5947354244"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
 </article>
