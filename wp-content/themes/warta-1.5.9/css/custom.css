@@ -143,3 +143,7 @@
   line-height:50px !important;
 }
 }
+
+#main-content p span {
+  font-size:18px !important;
+}
