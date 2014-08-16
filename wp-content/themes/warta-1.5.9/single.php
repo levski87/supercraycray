@@ -11,14 +11,17 @@ $friskamax_warta_var['html_id']   = 'blog-detail';
 
 get_header(); 
 
+?>
+
+</header>
+
+<?php
 warta_page_title( 
         get_post_format() == 'aside' ? '': get_the_title(), 
         get_the_category_list( _x( ' / ', 'Used between category list items.', 'warta' ) )
 ); 
 
 ?>
-</header>
-
 <div id="content">
         <div class="container">
                 <div class="row">
