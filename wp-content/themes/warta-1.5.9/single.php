@@ -41,17 +41,17 @@ warta_page_title(
                                                          data-permalink="<?php the_permalink() ?>"
                                                          data-title="<?php the_title() ?>">
                                                 </section>
-<?php                                   endif; */
+<?php                       ** Remove Tags             endif; */
 
                                         // Post tags
-                                        if( $friskamax_warta['singular_post_meta']['tags'] && get_the_tags() ) : ?>
-                                                <section class="post-tags clearfix">
-<?php                                                   if( isset( $friskamax_warta['singular_tag_text'] ) && !!$friskamax_warta['singular_tag_text'] ) {
-                                                                echo '<h5>' . $friskamax_warta['singular_tag_text'] . '</h5>';
-                                                        }
-                                                        the_tags('<ul class="tags"><li>', '</li><li>', '</li></ul>') ?>
-                                                </section>
-<?php                                   endif; 
+                  //                      if( $friskamax_warta['singular_post_meta']['tags'] && get_the_tags() ) : ?>
+                                   <?php  // Remove Tags              <section class="post-tags clearfix"> ?>
+<?php                                            // Remove Tags      if( isset( $friskamax_warta['singular_tag_text'] ) && !!$friskamax_warta['singular_tag_text'] ) {
+                                                   // Remove Tags            echo '<h5>' . $friskamax_warta['singular_tag_text'] . '</h5>';
+                                                   // Remove Tags    }
+                                                     //  Remove Tags the_tags('<ul class="tags"><li>', '</li><li>', '</li></ul>') ?>
+                                              <?php   // Remove Tags </section> ?> 
+<?php                                 //  endif; 
 
                                         // Prev/next post navigation
                                         //warta_post_nav();
