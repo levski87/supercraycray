@@ -15,7 +15,7 @@ preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $match
 $warta_review_box       = new Warta_Review_Box();
 ?>
 
-<article id="post-<?php the_ID(); ?>" 
+<article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
                 'article-large entry-content clearfix ' . 
                 (!get_the_content() ? 'no-padding-bottom no-border-bottom' : '') 
@@ -81,7 +81,10 @@ $warta_review_box       = new Warta_Review_Box();
                the_content(); 
         } 
         
-        // Pages
+ ?>
+</article>
+
+ <?php         // Pages
         wp_link_pages( array(
                 'before'        => '<div class="page-links">' . __( '', 'warta' ),
                 'after'         => '</div>',
@@ -91,8 +94,9 @@ $warta_review_box       = new Warta_Review_Box();
                 'previouspagelink' => '← Previous',
                 'link_after'    => '</span>'
         ) ); ?>
+
 <!-- 336 x 280 Bottom -->
-<div style="text-align:center">
+<div style="text-align:center; padding-top:10px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:inline-block;width:336px;height:280px"
@@ -102,4 +106,3 @@ $warta_review_box       = new Warta_Review_Box();
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-</article>
