@@ -28,9 +28,9 @@ $warta_review_box       = new Warta_Review_Box();
 <?php   // No featured image
         else :            
                 if( !$hide_post_meta_main ) {
-                        echo '<hr class="no-margin-top">';                
-                        echo warta_post_meta();                
-                        echo '<hr>';
+                        //echo '<hr class="no-margin-top">';                
+                       // echo warta_post_meta();                
+                        //echo '<hr>';
                 }                 
         endif;
         // Link pages
