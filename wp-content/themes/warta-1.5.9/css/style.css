@@ -8316,7 +8316,7 @@ article:after {
   position: relative;
 }
 #title .container .title-container {
-  bottom: 20px;
+  top: 20px;
   color: #f0f0f8;
   margin-right: 15px;
   position: absolute;
