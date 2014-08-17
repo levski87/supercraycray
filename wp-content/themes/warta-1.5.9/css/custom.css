@@ -172,3 +172,7 @@
    overflow: visible;
    height: auto;
 }
+
+.image-light {
+  position: relative;
+}
