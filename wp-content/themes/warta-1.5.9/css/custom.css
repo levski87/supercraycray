@@ -157,15 +157,18 @@
   color: #f0f0f8;
   margin-right: 15px;
   position: relative;
+  height: auto;
+
 }
 
 
 #title .container .title-container .primary {
   background: none !important;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 100%;
 }
 
 #title {
    overflow: visible;
-   height: 50px;
+   height: auto;
 }
