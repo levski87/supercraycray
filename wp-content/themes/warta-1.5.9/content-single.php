@@ -97,7 +97,7 @@ $warta_review_box       = new Warta_Review_Box();
                         // This shows the page count i.e. "1 of 5"
                             echo( $page.' of '.count($pages) );
                 
-                }?>
+                ?>
             </div>
                 <?php
                         // This shows the Next link
