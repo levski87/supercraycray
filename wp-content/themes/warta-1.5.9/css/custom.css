@@ -81,7 +81,7 @@
 }
 
 .page-count {
-   width:40%;
+   width:20%;
   font-size: 30px !important;
   color: black !important;
 }
@@ -189,6 +189,7 @@
 }
 
 .page-link-nextprev {
+  width:30%;
   background-color: #ff9a03;
   color: black;
   padding-left:30px;
