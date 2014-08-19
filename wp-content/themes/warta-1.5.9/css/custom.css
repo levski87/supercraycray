@@ -70,8 +70,10 @@
 
 .page-count {
    width:20%;
-  font-size: 30px !important;
-  color: black !important;
+  font-size: 30px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: 400px) {
@@ -183,13 +185,11 @@
   padding-left:35px;
   padding-right:35px;
   border-radius: 10px;
+  color: white;
+  font-size: 30px;
   
 }
 
-.next {
-  color: white;
-  font-size: 30px;
-}
 .page-link-nextprev a:hover {
   color: white;
 }
@@ -201,13 +201,40 @@
   padding-left:35px;
   padding-right:35px;
   border-radius: 10px;
+  color: white;
+  font-size: 30px;
   
 }
 
-.previous {
-  color: white;
-  font-size: 30px;
+ 
+@media (min-width: 400px) and (max-width: 600px) {
+  .next { 
+    font-size: 24px !important;
+        }
+  .previous { 
+    font-size:24px !important;
+      }
+  .page-count { 
+    font-size: 24px !important; }
+
 }
 
- 
- 
+
+@media (max-width: 399px) {
+  .previous { 
+    font-size: 14px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+        }
+  .next {
+    font-size: 14px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-count {
+    font-size:14px !important;
+  }
+}
+
+
+
