@@ -82,7 +82,7 @@ $warta_review_box       = new Warta_Review_Box();
 <?php
 
    global $page, $pages;
-   $maxpages = $wp_query->max_num_pages
+   $maxpages = $wp_query->max_num_pages;
   ?>
             <div class="page-link-container" style="text-align: center !important;">
                 <?php
