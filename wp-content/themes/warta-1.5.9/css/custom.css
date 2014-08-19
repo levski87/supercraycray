@@ -188,16 +188,19 @@
   position: relative;
 }
 
-.page-link-next {
+.page-link-nextprev {
   background-color: #ff9a03;
   color: black;
-  font-size: 30px;
+  padding-left:30px;
+  padding-right:30px;
+  border-radius: 10px;
 }
 
-.page-link-next a {
+.page-link-nextprev a {
   color: white;
+  font-size: 30px;
 }
-.page-link-next a:hover {
+.page-link-nextprev a:hover {
   color: white;
 }
 

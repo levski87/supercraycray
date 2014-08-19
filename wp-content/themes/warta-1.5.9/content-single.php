@@ -83,7 +83,7 @@ global $page, $pages;
 <?php
 
 // This shows the Previous link
-wp_link_pages( array( 'before' => '<div class="page-link-prev" style="display: inline-block !important;">', 
+wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 
 'after' => '</div>', 'previouspagelink' => '← Previous', 'nextpagelink' => '', 
 'next_or_number' => 'next' ) ); 
 ?>
@@ -98,7 +98,7 @@ echo( $page.' of '.count($pages) );
 
 <?php
 // This shows the Next link
-wp_link_pages( array( 'before' => '<div class="page-link-next" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '', 
+wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '', 
 'nextpagelink' => 'Next →', 'next_or_number' => 'next' ) ); 
 
 
