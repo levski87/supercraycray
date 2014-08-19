@@ -176,21 +176,37 @@
   position: relative;
 }
 
-.page-link-nextprev {
+.next {
   width:30%;
-  background-color: #ff9600;
+  background-color: #ff9600 !important;
   color: black;
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:35px;
+  padding-right:35px;
   border-radius: 10px;
+  
 }
 
-.page-link-nextprev a {
+.next {
   color: white;
   font-size: 30px;
 }
 .page-link-nextprev a:hover {
   color: white;
+}
+
+.previous {
+  /* width:33%; */
+  background-color: #ff9600 !important;
+  color: black;
+  padding-left:35px;
+  padding-right:35px;
+  border-radius: 10px;
+  
+}
+
+.previous {
+  color: white;
+  font-size: 30px;
 }
 
  
