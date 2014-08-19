@@ -84,7 +84,8 @@ global $page, $pages;
 
 // This shows the Previous link
 wp_link_pages( array( 'before' => '<div class="page-links" style="display: inline-block !important;">', 
-'after' => '</div>', 'previouspagelink' => '← Previous', ); 
+'after' => '</div>', 'previouspagelink' => '← Previous', 
+'next_or_number' => 'next' ) ); 
 ?>
 
 <div class="page-count" style="display: inline-block !important;">
