@@ -245,4 +245,19 @@
 }
 
 
+@media (min-width: 351px) and (max-width: 399px) {
+   .next { 
+    font-size: 18px !important;
+    padding-top:10px;
+    padding-bottom:10px;
+        }
+  .previous { 
+    font-size:18px !important;
+    padding-top:10px;
+    padding-bottom:10px;
+      }
+  .page-count { 
+    font-size: 18px !important; }
+
+}
 
