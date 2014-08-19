@@ -75,8 +75,14 @@ $warta_review_box       = new Warta_Review_Box();
  ?>
 </article>
 
-<?php 
+
+                            <?php // Link Pages // ?>
+            
+
+<?php
+
    global $page, $pages;
+   $maxpages = $wp_query->max_num_pages
   ?>
             <div class="page-link-container" style="text-align: center !important;">
                 <?php
@@ -87,10 +93,11 @@ $warta_review_box       = new Warta_Review_Box();
                 ?>
 
             <div class="page-count" style="display: inline-block !important;">
-                <?php
+                <?php if ($maxpages > 1) {
                         // This shows the page count i.e. "1 of 5"
                             echo( $page.' of '.count($pages) );
-                ?>
+                
+                }?>
             </div>
                 <?php
                         // This shows the Next link
