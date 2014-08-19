@@ -120,4 +120,4 @@ warta_page_title(
 </div><!--#content-->
 
 <?php 
-get_footer(); 
+get_footer(); ?>

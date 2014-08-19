@@ -69,10 +69,21 @@
 
 
 .page-links a {
-  width:49%;
+  width:100%;
   padding-top: 25px !important;
   padding-bottom: 25px !important;
+  padding-left:15px !important;
+  padding-right:15px !important;
   font-size: 30px !important;
+  background-color: #ff9a03 !important;
+  color: #f0f0f8 !important;
+  border-radius: 12px;
+}
+
+.page-count {
+   width:40%;
+  font-size: 30px !important;
+  color: black !important;
 }
 
 @media (max-width: 400px) {
@@ -176,3 +187,9 @@
 .image-light {
   position: relative;
 }
+
+.page-link-next {
+  color: red !important;
+}
+ 
+ 

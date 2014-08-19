@@ -34,15 +34,6 @@ $warta_review_box       = new Warta_Review_Box();
                 }                 
         endif;
         // Link pages
-                    wp_link_pages( array(
-                'before'        => '<div class="page-links">' . __( '', 'warta' ),
-                'after'         => '</div>',
-                'link_before'   => '<span>',
-                'next_or_number'=> 'Next',
-                'nextpagelink'=> 'Next →',
-                'previouspagelink' => '← Previous',
-                'link_after'    => '</span>'
-        ) );  
 ?>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="addthis_sharing_toolbox"></div>
@@ -84,16 +75,36 @@ $warta_review_box       = new Warta_Review_Box();
  ?>
 </article>
 
- <?php         // Pages
-        wp_link_pages( array(
-                'before'        => '<div class="page-links">' . __( '', 'warta' ),
-                'after'         => '</div>',
-                'link_before'   => '<span>',
-                'next_or_number'=> 'Next',
-                'nextpagelink'=> 'Next →',
-                'previouspagelink' => '← Previous',
-                'link_after'    => '</span>'
-        ) ); ?>
+<?php 
+
+global $page, $pages;
+?>
+<div class="page-link-container" style="text-align: center !important;">
+<?php
+
+// This shows the Previous link
+wp_link_pages( array( 'before' => '<div class="page-link-prev" style="display: inline-block !important;">', 
+'after' => '</div>', 'previouspagelink' => '← Previous', 'nextpagelink' => '', 
+'next_or_number' => 'next' ) ); 
+?>
+
+<div class="page-count" style="display: inline-block !important;">
+<?php
+
+// This shows the page count i.e. "1 of 5"
+echo( $page.' of '.count($pages) );
+?>
+</div>
+
+<?php
+// This shows the Next link
+wp_link_pages( array( 'before' => '<div class="page-links" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '', 
+'nextpagelink' => 'Next →', 'next_or_number' => 'next' ) ); 
+
+
+?>
+</div>
+
 
 <!-- 336 x 280 Bottom -->
 <div style="text-align:center; padding-top:10px;">
