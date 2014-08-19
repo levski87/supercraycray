@@ -93,7 +93,7 @@ $warta_review_box       = new Warta_Review_Box();
                 ?>
 
             <div class="page-count" style="display: inline-block !important;">
-                <?php if ($maxpages > 1) {
+                <?php 
                         // This shows the page count i.e. "1 of 5"
                             echo( $page.' of '.count($pages) );
                 
