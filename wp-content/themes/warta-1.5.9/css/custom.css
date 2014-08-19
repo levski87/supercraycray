@@ -226,6 +226,7 @@
     padding-right: 20px;
      padding-bottom: 15px;
     padding-top: 15px;
+    margin-bottom: 15px;
         }
   .next {
     font-size: 14px !important;
@@ -233,6 +234,7 @@
     padding-bottom: 15px;
     padding-top: 15px;
     padding-right: 20px;
+    margin-bottom: 15px;
   }
   .page-count {
     font-size:14px !important;
