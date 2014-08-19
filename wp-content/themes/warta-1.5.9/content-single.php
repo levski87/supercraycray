@@ -88,7 +88,7 @@ $warta_review_box       = new Warta_Review_Box();
                 <?php
                         // This shows the Previous link
                             wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 
-                                                  'after' => '</div>', 'previouspagelink' => 'Previous', 'nextpagelink' => '', 
+                                                  'after' => '</div>', 'previouspagelink' => '<span class="previous">Previous</span>', 'nextpagelink' => '', 
                                                   'next_or_number' => 'next' ) ); 
                 ?>
 
@@ -102,7 +102,7 @@ $warta_review_box       = new Warta_Review_Box();
                 <?php
                         // This shows the Next link
                             wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '', 
-                                                  'nextpagelink' => 'Next', 'next_or_number' => 'next' ) ); 
+                                                  'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) ); 
                 ?>
             </div>
 
