@@ -68,18 +68,6 @@
 }
 
 
-.page-links a:first-child {
-  width:100%;
-  padding-top: 25px !important;
-  padding-bottom: 25px   !important;
-  padding-left:15px !important;
-  padding-right:15px !important;
-  font-size: 30px !important;
-  background-color: #ff9a03 !important;
-  color: #f0f0f8 !important;
-  border-radius: 12px;
-}
-
 .page-count {
    width:20%;
   font-size: 30px !important;
@@ -155,10 +143,11 @@
 
 #main-content p span {
   font-size:13px !important;
+  font: helvetica
 }
 
 #main-content p {
-  font-size:13px !important;
+  font-size:15px important;
 }
 
 #title .container .title-container {
