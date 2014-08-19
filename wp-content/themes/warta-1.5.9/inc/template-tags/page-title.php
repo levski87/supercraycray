@@ -19,7 +19,7 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
     <div id="title">
         <div class="image-light"></div>
         <div class="container">
-            <div class="title-container">
+            <div class="title-container col-md-8">
                 
                 <?php if($one_line) : ?>
                 
