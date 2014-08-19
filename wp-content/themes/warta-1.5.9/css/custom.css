@@ -71,7 +71,7 @@
 .page-links a:first-child {
   width:100%;
   padding-top: 25px !important;
-  padding-bottom: 25px !important;
+  padding-bottom: 25px   !important;
   padding-left:15px !important;
   padding-right:15px !important;
   font-size: 30px !important;
@@ -189,7 +189,17 @@
 }
 
 .page-link-next {
-  color: red !important;
+  background-color: #ff9a03;
+  color: black;
+  font-size: 30px;
 }
+
+.page-link-next a {
+  color: white;
+}
+.page-link-next a:hover {
+  color: white;
+}
+
  
  
