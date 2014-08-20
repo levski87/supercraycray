@@ -120,4 +120,9 @@ $warta_review_box       = new Warta_Review_Box();
 </div>
 
 <!-- Taboola -->
-<?php taboola(); ?>
+<?php 
+
+if ($page != 15) { 
+        taboola(); 
+
+        } ?>
