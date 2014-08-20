@@ -118,3 +118,6 @@ $warta_review_box       = new Warta_Review_Box();
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
+
+<!-- Taboola -->
+<?php taboola(); ?>

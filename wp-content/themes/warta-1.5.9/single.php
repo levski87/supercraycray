@@ -55,7 +55,6 @@ warta_page_title(
 
                                         // Prev/next post navigation
                                         //warta_post_nav();
-                                        taboola();
 
                                         // Author
                                         if( isset( $friskamax_warta['singular_author_info'] ) && !!$friskamax_warta['singular_author_info'] ) : ?>
@@ -118,6 +117,7 @@ warta_page_title(
                 </div>
         </div>
 </div><!--#content-->
+
 
 <?php 
 get_footer(); ?>
