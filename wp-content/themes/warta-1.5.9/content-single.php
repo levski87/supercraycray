@@ -110,10 +110,11 @@ $warta_review_box       = new Warta_Review_Box();
 <!-- 336 x 280 Bottom -->
 <div style="text-align:center; padding-top:10px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 320x50 -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
+     style="display:inline-block;width:320px;height:50px"
      data-ad-client="ca-pub-4528087481844577"
-     data-ad-slot="5947354244"></ins>
+     data-ad-slot="1165084247"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
