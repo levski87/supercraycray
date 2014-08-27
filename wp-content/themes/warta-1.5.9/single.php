@@ -12,6 +12,8 @@ $friskamax_warta_var['html_id']   = 'blog-detail';
 get_header(); 
 
 ?>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
 </header>
 
