@@ -16,14 +16,6 @@ get_header();
 <script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 <!-- Luminate Ad -->
 
-<script type="text/javascript">
-(function() {
-  var a, s = document.getElementsByTagName("script")[0];
-  a = document.createElement("script");
-  a.type="text/javascript";  a.async = true;
-  a.src = "http://www.luminate.com/widget/async/11c0dab2eb7/";
-  s.parentNode.insertBefore(a, s);
-})();
 
 </header>
 
