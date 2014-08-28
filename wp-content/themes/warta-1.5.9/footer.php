@@ -12,6 +12,10 @@ global $friskamax_warta, $friskamax_warta_var;
 ?>
 
     <footer>
+
+        <!---GUM GUM -->
+        <script type="text/javascript">ggv2id='e466273c';</script>
+        <script type="text/javascript" src="http://g2.gumgum.com/javascripts/ggv2.js"></script>
         
         <!-- MAIN FOOTER
         ==================================================================== -->
