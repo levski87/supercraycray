@@ -148,6 +148,8 @@ _taboola.push({article:'auto'});
                                 </div><!-- .navbar-collapse -->
                         </div><!--.container-->
                 </nav><!--#main-nav-->
+
+<?php /*
 <div id="adunit-leader">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- leaderboard -->
@@ -159,3 +161,5 @@ _taboola.push({article:'auto'});
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
                 </div>
+
+*/ ?>

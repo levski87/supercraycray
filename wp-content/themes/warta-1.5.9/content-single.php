@@ -15,6 +15,18 @@ preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $match
 $warta_review_box       = new Warta_Review_Box();
 ?>
 
+<div id="adunit-leade">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4528087481844577"
+     data-ad-slot="2271573049"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
                 'article-large entry-content clearfix ' . 
@@ -119,11 +131,3 @@ $warta_review_box       = new Warta_Review_Box();
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-
-<!-- Taboola -->
-<?php 
-
-if ($page != 15) { 
-        taboola(); 
-
-        } ?>
