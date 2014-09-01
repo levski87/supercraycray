@@ -15,17 +15,40 @@ preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $match
 $warta_review_box       = new Warta_Review_Box();
 ?>
 
-<div id="adunit-leade">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- leaderboard -->
+
+<?php
+
+$detect = new Mobile_Detect;
+    if ($detect->isMobile()) { ?>
+
+<div class="adunit">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300x250 Mobile Ad -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
+     style="display:inline-block;width:300px;height:250px"
      data-ad-client="ca-pub-4528087481844577"
-     data-ad-slot="2271573049"></ins>
+     data-ad-slot="9636387047"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
+
+    <?php } else { ?>
+          <div class="adunit">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- leaderboard -->
+        <ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4528087481844577"
+     data-ad-slot="2271573049"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </div>
+<?php 
+    }
+?>
+
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(

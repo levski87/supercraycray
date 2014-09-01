@@ -22,8 +22,7 @@
         #gallery-page #title    { background-image: url('../img/title-background-gallery-page-large.jpg') }
 }
 
-#adunit-leader {
-  padding: 20px 0 0;
+.adunit {
   text-align: center;
   height: auto;
   background-image: none !important;

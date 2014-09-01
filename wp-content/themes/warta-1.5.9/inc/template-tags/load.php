@@ -28,3 +28,4 @@ require dirname(__FILE__) . '/favicon.php';
 require dirname(__FILE__) . '/css-code.php';
 require dirname(__FILE__) . '/js-code.php';
 require dirname(__FILE__) . '/taboola.php';
+require dirname(__FILE__) . '/Mobile_detect.php';
