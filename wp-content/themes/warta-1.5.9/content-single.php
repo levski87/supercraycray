@@ -154,3 +154,5 @@ $detect = new Mobile_Detect;
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
+
+<?php taboola(); ?>
