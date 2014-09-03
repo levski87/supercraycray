@@ -25,7 +25,7 @@ define('DB_USER', 'supercraycray');
 define('DB_PASSWORD', 'Thewoods1');
 
 /** MySQL hostname */
-define('DB_HOST', 'aarn83rl7x2pwv.cc8qyuixejdu.us-east-1.rds.amazonaws.com');
+define('DB_HOST', 'aarn83rl7x2pwv.cc8qyuixejdu.us-east-1.rds.amazonaws.comg');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

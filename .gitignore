@@ -12,7 +12,8 @@ wp-content/plugins/db-cache-reloaded-fix/cache/*
 #wp-config.php
 #wp-config.php.*
 
-
+.env.*
+!.env.sample.php
 
 # W3TC stuff -- I should find the proper things to ignore from w3tc plugin
 wp-content/db.php
