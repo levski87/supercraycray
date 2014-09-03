@@ -1,4 +1,37 @@
 <?php
+
+/*
+|--------------------------------------------------------------------------
+| Detect The Application Environment
+|--------------------------------------------------------------------------
+|
+| Super cray cray takes a dead simple approach to your application environments
+| so you can just specify a machine name for the host that matches a
+| given environment, then we will automatically detect it for you.
+|
+| You can find your hostname by running `hostname` in terminal.
+|
+*/
+$environments = array(
+    'local' => array(
+        'kirill'
+    ),
+);
+
+foreach ($environments as $environment => $hosts)
+{
+    // To determine the current environment, we'll simply iterate through the possible
+    // environments and look for the host that matches the host for this request we
+    // are currently processing here, then return back these environment's names.
+    foreach ((array) $hosts as $host)
+    {
+        if ($host === gethostname()) {
+            require_once ".env.{$environment}.php";
+        }
+    }
+}
+
+
 /**
  * The base configurations of the WordPress.
  *
@@ -16,16 +49,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'supercraycray');
+define('DB_NAME', $_ENV['DB_NAME']);
 
 /** MySQL database username */
-define('DB_USER', 'supercraycray');
+define('DB_USER', $_ENV['DB_USER']);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Thewoods1');
+define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 
 /** MySQL hostname */
-define('DB_HOST', 'aarn83rl7x2pwv.cc8qyuixejdu.us-east-1.rds.amazonaws.comg');
+define('DB_HOST', $_ENV['DB_HOST']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
