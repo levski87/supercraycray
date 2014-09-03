@@ -16,10 +16,12 @@ wp-content/plugins/db-cache-reloaded-fix/cache/*
 !.env.sample.php
 
 # W3TC stuff -- I should find the proper things to ignore from w3tc plugin
-wp-content/db.php
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-wp-content/object-cache.php
-wp-content/w3tc-config/
+
+# These files were added temp so we can push traffic but a better solution needs to be implemented.
+#wp-content/db.php
+#wp-content/advanced-cache.php
+#wp-content/wp-cache-config.php
+#wp-content/object-cache.php
+#wp-content/w3tc-config/
 wp-content/cache/
 .elasticbeanstalk/
