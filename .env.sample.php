@@ -9,3 +9,5 @@ $_ENV['DB_NAME'] = 'supercraycray';
 $_ENV['DB_USER'] = 'root';
 $_ENV['DB_PASSWORD'] = 'kirill';
 $_ENV['DB_HOST'] = 'localhost';
+$_ENV['AWS_ACCESS_KEY_ID'] = '';
+$_ENV['AWS_SECRET_KEY'] = '';
