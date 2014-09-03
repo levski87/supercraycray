@@ -155,4 +155,4 @@ $detect = new Mobile_Detect;
 </script>
 </div>
 
-<?php taboola(); ?>
+<?php contentad(); ?>
