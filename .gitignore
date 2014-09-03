@@ -4,11 +4,13 @@
 .settings/
 .idea/
 *.iml
-wp-config.php
-wp-config.php.*
 !.gitkeep
 wp-content/uploads/*
 wp-content/plugins/db-cache-reloaded-fix/cache/*
+
+# WP config was added to repo to simplify deployment to AWS EB
+#wp-config.php
+#wp-config.php.*
 
 
 
