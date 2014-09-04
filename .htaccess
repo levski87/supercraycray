@@ -1,5 +1,7 @@
 # BEGIN WpFastestCache
 <IfModule mod_rewrite.c>
+# Quick fix for image redirects.
+RedirectMatch 301 ^/wp-content/uploads/(.*)$ http://media.supercraycray.com/wp-content/uploads/$1
 RewriteEngine On
 RewriteBase /
 AddDefaultCharset UTF-8
