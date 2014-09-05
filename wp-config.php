@@ -118,7 +118,7 @@ define('WP_DEBUG', false);
 
 $memcached_servers = array(
     'default' => array(
-        '127.0.0.1:11211',
+        'supercraycray.ifw2tx.0001.use1.cache.amazonaws.com:11211',
     )
 );
 
