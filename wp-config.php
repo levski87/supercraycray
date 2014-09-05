@@ -1,5 +1,5 @@
 <?php
-
+define('WP_CACHE', true);
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment
@@ -115,6 +115,12 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+$memcached_servers = array(
+    'default' => array(
+        '127.0.0.1:11211',
+    )
+);
 
 /* That's all, stop editing! Happy blogging. */
 
