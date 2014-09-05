@@ -30,7 +30,7 @@ class batcache {
 
 	var $uncached_headers = array('transfer-encoding'); // These headers will never be cached. Apply strtolower.
 
-	var $debug   = false; // Set false to hide the batcache info <!-- comment -->
+	var $debug   = true; // Set false to hide the batcache info <!-- comment -->
 
 	var $cache_control = true; // Set false to disable Last-Modified and Cache-Control headers
 
