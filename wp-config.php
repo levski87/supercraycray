@@ -117,9 +117,7 @@ define('WPLANG', '');
 define('WP_DEBUG', false);
 
 $memcached_servers = array(
-    'default' => array(
-        'supercraycray.ifw2tx.0001.use1.cache.amazonaws.com:11211',
-    )
+    'default' => $_ENV['MEMCACHED_SERVERS']
 );
 
 /* That's all, stop editing! Happy blogging. */
