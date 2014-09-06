@@ -116,6 +116,24 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+/**
+ * Disable all automatic updates
+ */
+define('AUTOMATIC_UPDATER_DISABLED', true);
+
+/**
+ * This will block users being able to use the plugin and theme installation/update
+ * functionality from the WordPress admin area. Setting this constant also disables
+ * the Plugin and Theme editor (i.e. you don't need to set DISALLOW_FILE_MODS and
+ * DISALLOW_FILE_EDIT, as on its own DISALLOW_FILE_MODS will have the same effect).
+ */
+define('DISALLOW_FILE_MODS', true);
+
+/**
+ * Disable all core updates:
+ */
+define('WP_AUTO_UPDATE_CORE', false);
+
 $memcached_servers = array(
     'default' => array(
         'supercraycray.ifw2tx.0001.use1.cache.amazonaws.com:11211',
