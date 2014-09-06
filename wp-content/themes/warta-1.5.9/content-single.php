@@ -45,7 +45,7 @@ $detect = new Mobile_Detect;
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         </div>
-<?php 
+<?php
     }
 ?>
 
@@ -143,7 +143,7 @@ $detect = new Mobile_Detect;
 
 
 <!-- 336 x 280 Bottom -->
-<div style="text-align:center; padding-top:10px;">
+<div style="text-align:center; padding-top:17px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 336 x 280 Bottom -->
 <ins class="adsbygoogle"
