@@ -17,7 +17,7 @@ $userAgent = new Mobile_Detect();
 ?>
 
 
-<?php if ($userAgent->isMobile()) : ?>
+<?php if (!$userAgent->isMobile()) : ?>
 
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -106,16 +106,18 @@ $userAgent = new Mobile_Detect();
  ?>
 </article>
 
-<?php if ($userAgent->isMobile()) : ?>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- 300x100 Mobile Ad -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:320px;height:100px"
-         data-ad-client="ca-pub-4528087481844577"
-         data-ad-slot="5745754243"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+<?php if (!$userAgent->isMobile()) : ?>
+    <div style="text-align:center; padding-bottom:17px;">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 300x100 Mobile Ad -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:320px;height:100px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5745754243"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 <?php endif; ?>
 
 <?php // Link Pages // ?>
@@ -148,7 +150,7 @@ $userAgent = new Mobile_Detect();
                 ?>
             </div>
 
-<?php if (!$userAgent->isMobile()) : ?>
+<?php if ($userAgent->isMobile()) : ?>
 
     <!-- 336 x 280 Bottom -->
     <div style="text-align:center; padding-top:17px;">

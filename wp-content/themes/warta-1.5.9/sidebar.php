@@ -4,7 +4,9 @@
  *
  * @package Warta
  */
-
+// dirty mobile check... @TODO clean up
+$mobCheck = new Mobile_Detect();
+if (!$mobCheck->isMobile()) :
 // Get $friskamax_warta global variables
 global $friskamax_warta_var;
 
@@ -39,4 +41,5 @@ $custom_sidebar         = get_post_meta( $the_id, 'friskamax_sidebar', true );  
                         endif; 
                 ?>
         </div><!--.row-->
-</aside><!--aside-->               
+</aside><!--aside-->
+<?php endif; //End dirty mobile check ?>
