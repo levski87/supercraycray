@@ -13,41 +13,37 @@ $featured_media         = warta_match_featured_media('^', $rest_content);
 preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $matches_carousel); 
 
 $warta_review_box       = new Warta_Review_Box();
+$userAgent = new Mobile_Detect();
 ?>
 
 
-<?php
+<?php if ($userAgent->isMobile()) : ?>
 
-$detect = new Mobile_Detect;
-    if ($detect->isMobile()) { ?>
-
-<div class="adunit">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 300x250 Mobile Ad -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-4528087481844577"
-     data-ad-slot="9636387047"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-
-    <?php } else { ?>
-          <div class="adunit">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- leaderboard -->
+    <div class="adunit">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 300x250 Mobile Ad -->
         <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4528087481844577"
-     data-ad-slot="2271573049"></ins>
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="9636387047"></ins>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        </div>
-<?php
-    }
-?>
+    </div>
+
+<?php else : ?>
+    <div class="adunit">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- leaderboard -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="2271573049"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+<?php endif; ?>
 
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
@@ -69,8 +65,8 @@ $detect = new Mobile_Detect;
                 }                 
         endif;
         // Link pages
+        // Go to www.addthis.com/dashboard to customize your tools
 ?>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="addthis_sharing_toolbox"></div>
 
 <?php
@@ -110,8 +106,19 @@ $detect = new Mobile_Detect;
  ?>
 </article>
 
+<?php if ($userAgent->isMobile()) : ?>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 300x100 Mobile Ad -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:320px;height:100px"
+         data-ad-client="ca-pub-4528087481844577"
+         data-ad-slot="5745754243"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<?php endif; ?>
 
-                            <?php // Link Pages // ?>
+<?php // Link Pages // ?>
             
 
 <?php
@@ -128,7 +135,7 @@ $detect = new Mobile_Detect;
                 ?>
 
             <div class="page-count" style="display: inline-block !important;">
-                <?php 
+                <?php
                         // This shows the page count i.e. "1 of 5"
                             echo( $page.' of '.count($pages) );
                 
@@ -141,18 +148,21 @@ $detect = new Mobile_Detect;
                 ?>
             </div>
 
+<?php if (!$userAgent->isMobile()) : ?>
 
-<!-- 336 x 280 Bottom -->
-<div style="text-align:center; padding-top:17px;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 336 x 280 Bottom -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-4528087481844577"
-     data-ad-slot="5947354244"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+    <!-- 336 x 280 Bottom -->
+    <div style="text-align:center; padding-top:17px;">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 336 x 280 Bottom -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5947354244"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+<?php endif; ?>
 
 <?php contentad(); ?>

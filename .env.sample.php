@@ -11,3 +11,4 @@ $_ENV['DB_PASSWORD'] = 'kirill';
 $_ENV['DB_HOST'] = 'localhost';
 $_ENV['AWS_ACCESS_KEY_ID'] = '';
 $_ENV['AWS_SECRET_KEY'] = '';
+$_ENV['MEMCACHED_NODE_ONE'] = '127.0.0.1:11211';

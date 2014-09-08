@@ -207,9 +207,9 @@ if ( ! is_object( $wp_object_cache ) )
 
 // Now that the defaults are set, you might want to use different settings under certain conditions.
 
-/* Example: if your documents have a mobile variant (a different document served by the same URL) you must tell batcache about the variance. Otherwise you might accidentally cache the mobile version and serve it to desktop users, or vice versa.
-$batcache->unique['mobile'] = is_mobile_user_agent();
-*/
+/* Example: if your documents have a mobile variant (a different document served by the same URL) you must tell batcache about the variance. Otherwise you might accidentally cache the mobile version and serve it to desktop users, or vice versa. */
+$batcache->unique['mobile'] = $mobileDetect->isMobile();
+
 
 /* Example: never batcache for this host
 if ( $_SERVER['HTTP_HOST'] == 'do-not-batcache-me.com' )

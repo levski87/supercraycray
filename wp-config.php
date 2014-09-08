@@ -136,9 +136,12 @@ define('WP_AUTO_UPDATE_CORE', false);
 
 $memcached_servers = array(
     'default' => array(
-        'supercraycray.ifw2tx.0001.use1.cache.amazonaws.com:11211',
+       $_ENV['MEMCACHED_NODE_ONE'],
     )
 );
+
+require_once(ABSPATH . 'Mobile_Detect.php');
+$mobileDetect = new Mobile_Detect();
 
 /* That's all, stop editing! Happy blogging. */
 
