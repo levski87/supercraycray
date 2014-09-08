@@ -122,7 +122,7 @@ $userAgent = new Mobile_Detect();
 
 <?php // This is a test for article 7553 on mobile. Share bar. ?>
 <?php if (get_the_ID() == 7553 && $userAgent->isMobile()) : ?>
-    <div class="sswpds-social-wrap" style="padding-top: 20px;">
+    <div class="sswpds-social-wrap" style="padding-top: 10px; padding-bottom: 25px;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=') . get_permalink() ?>" target="_blank">
             <i class="fa fa-facebook-square"></i> Share on Facebook
         </a>
