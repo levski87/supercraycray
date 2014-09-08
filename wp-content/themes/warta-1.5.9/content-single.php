@@ -45,6 +45,14 @@ $userAgent = new Mobile_Detect();
     </div>
 <?php endif; ?>
 
+<?php if (get_the_ID() == 7287) : ?>
+<div class="sswpds-social-wrap">
+    <a href="<?php echo esc_url('http://www.facebook.com/share.php?u=') . get_permalink() ?>" target="_blank">
+        <i class="fa fa-facebook-square"></i> Share on Facebook
+    </a>
+</div>
+<?php endif; ?>
+
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
