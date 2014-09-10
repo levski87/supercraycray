@@ -1,11 +1,28 @@
 <?php
 /**
+ * Custom functions
+ */
+function fbOpenGraph() {
+    global $post;
+
+    if (!empty($post->ID)) {
+        ?>
+        <meta property="og:title" content="<?php echo get_the_title($post->ID)?>">
+        <meta property="og:image" content="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID))[0]; ?>">
+        <meta property="og:url" content="<?php echo get_permalink($post->ID); ?>">
+        <?php
+    }
+}
+add_action('wp_head', 'fbOpenGraph');
+
+
+
+
+/**
  * Warta functions and definitions
  *
  * @package Warta
  */
-
-
 
 // Load Warta Theme variables
 require get_template_directory() . '/inc/variable.php';
