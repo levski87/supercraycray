@@ -8,7 +8,7 @@ function fbOpenGraph() {
     if (!empty($post->ID)) {
         ?>
         <meta property="og:title" content="<?php echo get_the_title($post->ID)?>">
-        <meta property="og:image" content="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID))[0]; ?>">
+        <meta property="og:image" content="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0]; ?>">
         <meta property="og:url" content="<?php echo get_permalink($post->ID); ?>">
         <?php
     }
