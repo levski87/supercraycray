@@ -20,6 +20,7 @@ $userAgent = new Mobile_Detect();
 <?php if ($userAgent->isMobile()) : ?>
 
     <div class="adunit">
+        <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 300x250 Mobile Ad -->
         <ins class="adsbygoogle"
