@@ -107,6 +107,7 @@ $userAgent = new Mobile_Detect();
 
 <?php if ($userAgent->isMobile()) : ?>
     <div style="text-align:center; padding-bottom:17px;">
+        <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 300x100 Mobile Ad -->
         <ins class="adsbygoogle"
@@ -120,7 +121,6 @@ $userAgent = new Mobile_Detect();
 <?php endif; ?>
 
 
-<?php // This is a test for article 7553 on mobile. Share bar. ?>
 <?php if ($userAgent->isMobile()) : ?>
     <div class="sswpds-social-wrap" style="padding-top: 10px; padding-bottom: 25px;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
