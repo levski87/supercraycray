@@ -26,7 +26,7 @@ warta_page_title(
 );
 ?>
 
-<div id="content">
+<div id="content" style="padding-bottom: 20px;">
     <div class="container">
         <div class="row">
             <main id="main-content" class="col-md-8" role="main">
