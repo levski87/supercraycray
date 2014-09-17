@@ -1,4 +1,5 @@
-<div id="contentad26326" style="text-align: center;"></div>
+<?php // Removed the div from bottom of post.
+//<div id="contentad26326" style="text-align: center;"></div> ?>
 <script type="text/javascript">
     (function() {
         var params =

@@ -185,3 +185,5 @@ $userAgent = new Mobile_Detect();
         <?php comments_template('/comments-facebook.php'); ?>
     </div>
 <?php endif; ?>
+
+<?php get_template_part('patials/content', 'ad'); ?>
