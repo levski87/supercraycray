@@ -186,4 +186,4 @@ $userAgent = new Mobile_Detect();
     </div>
 <?php endif; ?>
 
-<?php get_template_part('patials/content', 'ad'); ?>
+<?php get_template_part('partials/content', 'ad'); ?>
