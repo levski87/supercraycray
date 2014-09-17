@@ -14,7 +14,8 @@ define('WP_CACHE', true);
 */
 $environments = array(
     'local' => array(
-        'kirill'
+        'kirill',
+	'Denis-PC',
     ),
 );
 
