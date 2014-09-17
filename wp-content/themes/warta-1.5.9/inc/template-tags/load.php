@@ -27,4 +27,3 @@ require dirname(__FILE__) . '/ie8-support.php';
 require dirname(__FILE__) . '/favicon.php';
 require dirname(__FILE__) . '/css-code.php';
 require dirname(__FILE__) . '/js-code.php';
-require dirname(__FILE__) . '/contentad.php';

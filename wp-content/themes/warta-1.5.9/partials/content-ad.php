@@ -1,17 +1,3 @@
-<?php
-/**
- * Print page title
- * 
- * @package Warta
- */
-
-if( !function_exists('taboola') ) :
-/**
- * Get Taboola
- */
-function contentad() {
-?> 
-
 <div id="contentad26326" style="text-align: center;"></div>
 <script type="text/javascript">
     (function() {
@@ -33,7 +19,3 @@ function contentad() {
         document.getElementById("contentad26326").appendChild(s);
     })();
 </script>
-
-    <?php
-}
-endif; // warta_page_title
