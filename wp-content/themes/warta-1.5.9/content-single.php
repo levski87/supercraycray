@@ -132,35 +132,31 @@ $userAgent = new Mobile_Detect();
     </div>
 <?php endif; ?>
 
+
 <?php // Link Pages // ?>
-            
+<?php global $page, $pages, $numpages; ?>
+<?php $maxpages = $wp_query->max_num_pages; ?>
 
-<?php
+<?php if ($numpages > 1) : ?>
+    <div class="page-link-container" style="text-align: center !important;">
+        <?php
+        // This shows the Previous link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
+                              'after' => '</div>', 'previouspagelink' => '<span class="previous">Back</span>', 'nextpagelink' => '',
+                              'next_or_number' => 'next' ) );
+        ?>
 
-   global $page, $pages;
-   $maxpages = $wp_query->max_num_pages;
-  ?>
-            <div class="page-link-container" style="text-align: center !important;">
-                <?php
-                        // This shows the Previous link
-                            wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 
-                                                  'after' => '</div>', 'previouspagelink' => '<span class="previous">Back</span>', 'nextpagelink' => '', 
-                                                  'next_or_number' => 'next' ) ); 
-                ?>
 
-            <div class="page-count" style="display: inline-block !important;">
-                <?php
-                        // This shows the page count i.e. "1 of 5"
-                            echo( $page.' of '.count($pages) );
-                
-                ?>
-            </div>
-                <?php
-                        // This shows the Next link
-                            wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '', 
-                                                  'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) ); 
-                ?>
-            </div>
+        <div class="page-count" style="display: inline-block !important;">
+            <?php echo( $page.' of '.count($pages) ); ?>
+        </div>
+        <?php
+        // This shows the Next link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '',
+                              'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) );
+        ?>
+    </div>
+<?php endif; ?>
 
 <?php if (!$userAgent->isMobile()) : ?>
 
