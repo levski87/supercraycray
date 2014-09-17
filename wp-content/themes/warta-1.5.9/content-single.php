@@ -179,4 +179,7 @@ $userAgent = new Mobile_Detect();
 
 <?php endif; ?>
 
-<?php contentad(); ?>
+<?php if ($userAgent->isMobile()) :
+    comments_template('/comments-facebook.php');
+endif; ?>
+<?php get_template_part('partials/content', 'ad'); ?>
