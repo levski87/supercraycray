@@ -86,6 +86,8 @@ function set_post_format( $post, $format ) {
  * @since 3.1.0
  *
  * @return array The array of translated post format names.
+ *
+ * @TODO EDITTED
  */
 function get_post_format_strings() {
 	$strings = array(
@@ -99,6 +101,7 @@ function get_post_format_strings() {
 		'status'   => _x( 'Status',   'Post format' ),
 		'video'    => _x( 'Video',    'Post format' ),
 		'audio'    => _x( 'Audio',    'Post format' ),
+        'noad'     => _x( 'NoAd',     'Post format' ),
 	);
 	return $strings;
 }

@@ -72,7 +72,18 @@ function warta_setup() {
         ) );
 
         // Enable support for Post Formats.
-        add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
+        add_theme_support( 'post-formats', array(
+            'aside',
+            'gallery',
+            'link',
+            'image',
+            'quote',
+            'status',
+            'video',
+            'audio',
+            'chat',
+            'noad',
+        ));
 
         // Enabling Support for Post Thumbnails
         add_theme_support( 'post-thumbnails' ); 
