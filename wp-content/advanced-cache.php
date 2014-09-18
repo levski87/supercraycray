@@ -229,6 +229,11 @@ if ( include_once( 'plugins/searchterm-highlighter.php') && referrer_has_search_
 */
 
 // Disabled
+if ($_ENV['DISABLE_MEMCACHE']) {
+    return;
+}
+
+// Disabled
 if ( $batcache->max_age < 1 )
 	return;
 
