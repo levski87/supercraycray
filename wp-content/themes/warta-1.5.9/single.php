@@ -97,8 +97,9 @@ warta_page_title(
                 <?php endwhile; ?>
 
             </main>
-
-            <?php get_sidebar(); ?>
+            <?php /* @TODO removed sidebar from this id temp fix */ if (get_the_ID() != 7846) : ?>
+                <?php get_sidebar(); ?>
+            <?php endif; ?>
         </div>
     </div>
 </div><!--#content-->
