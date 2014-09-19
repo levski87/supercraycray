@@ -107,7 +107,7 @@ $userAgent = new Mobile_Detect();
 </article>
 
 <?php if ($userAgent->isMobile()) : ?>
-    <div style="text-align:center; padding-bottom:17px;">
+    <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 300x100 Mobile Ad -->
@@ -118,17 +118,6 @@ $userAgent = new Mobile_Detect();
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
-<?php endif; ?>
-
-
-<?php if ($userAgent->isMobile()) : ?>
-    <div class="sswpds-social-wrap" style="padding-top: 10px; padding-bottom: 25px;">
-        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
-            .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-            .str_replace(' ', '-', get_the_title()); ?>" target="_blank">
-            <i class="fa fa-facebook-square"></i> Share on Facebook
-        </a>
     </div>
 <?php endif; ?>
 
@@ -155,6 +144,16 @@ $userAgent = new Mobile_Detect();
         wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '',
                               'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) );
         ?>
+    </div>
+<?php endif; ?>
+
+<?php if ($userAgent->isMobile()) : ?>
+    <div class="sswpds-social-wrap" style="padding-top: 17px;">
+        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
+            .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
+            .str_replace(' ', '-', get_the_title()); ?>" target="_blank">
+            <i class="fa fa-facebook-square"></i> Share on Facebook
+        </a>
     </div>
 <?php endif; ?>
 
