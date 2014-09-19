@@ -175,7 +175,7 @@ $userAgent = new Mobile_Detect();
 <?php endif; ?>
 
 
-    <div style="margin-top: 30px;">
+    <div style="margin-top: 20px;">
         <?php comments_template('/comments-facebook.php'); ?>
     </div>
 
