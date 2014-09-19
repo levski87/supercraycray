@@ -14,10 +14,10 @@ preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $match
 
 $warta_review_box       = new Warta_Review_Box();
 $userAgent = new Mobile_Detect();
+global $page, $pages, $numpages;
 ?>
 
-
-<?php if ($userAgent->isMobile()) : ?>
+<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
 
     <div class="adunit">
         <div style="font-size: 10px;">Advertisement</div>
@@ -32,7 +32,7 @@ $userAgent = new Mobile_Detect();
         </script>
     </div>
 
-<?php else : ?>
+<?php elseif ($page < $numpages) :?>
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- leaderboard -->
@@ -106,7 +106,7 @@ $userAgent = new Mobile_Detect();
  ?>
 </article>
 
-<?php if ($userAgent->isMobile()) : ?>
+<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
     <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -123,7 +123,6 @@ $userAgent = new Mobile_Detect();
 
 
 <?php // Link Pages // ?>
-<?php global $page, $pages, $numpages; ?>
 <?php $maxpages = $wp_query->max_num_pages; ?>
 
 <?php if ($numpages > 1) : ?>
@@ -157,7 +156,7 @@ $userAgent = new Mobile_Detect();
     </div>
 <?php endif; ?>
 
-<?php if (!$userAgent->isMobile()) : ?>
+<?php if (!$userAgent->isMobile() && ($page < $numpages)) : ?>
 
     <!-- 336 x 280 Bottom -->
     <div style="text-align:center; padding-top:17px;">
