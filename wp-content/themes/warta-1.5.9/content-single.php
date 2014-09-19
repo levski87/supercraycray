@@ -106,21 +106,27 @@ global $page, $pages, $numpages;
  ?>
 </article>
 
-<?php if ($userAgent->isMobile()) : ?>
-    <div class="sswpds-social-wrap">
-        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
-            .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-            .str_replace(' ', '-', get_the_title()); ?>" target="_blank">
-            <i class="fa fa-facebook-square"></i> Share on Facebook
-        </a>
+<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+    <div style="text-align:center; padding-bottom:8px;">
+        <div style="font-size: 10px;">Advertisement</div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 300x100 Mobile Ad -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:320px;height:100px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5745754243"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 <?php endif; ?>
+
 
 <?php // Link Pages // ?>
 <?php $maxpages = $wp_query->max_num_pages; ?>
 
 <?php if ($numpages > 1) : ?>
-    <div class="page-link-container" style="text-align: center !important; margin-top: 20px; margin-bottom: 20px;">
+    <div class="page-link-container" style="text-align: center !important;">
         <?php
         // This shows the Previous link
         wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
@@ -140,18 +146,13 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
-    <div style="text-align:center; padding-bottom:8px;">
-        <div style="font-size: 10px;">Advertisement</div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 300x100 Mobile Ad -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:320px;height:100px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5745754243"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+<?php if ($userAgent->isMobile()) : ?>
+    <div class="sswpds-social-wrap" style="padding-top: 17px;">
+        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
+            .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
+            .str_replace(' ', '-', get_the_title()); ?>" target="_blank">
+            <i class="fa fa-facebook-square"></i> Share on Facebook
+        </a>
     </div>
 <?php endif; ?>
 
