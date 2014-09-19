@@ -120,7 +120,7 @@ global $page, $pages, $numpages;
 <?php $maxpages = $wp_query->max_num_pages; ?>
 
 <?php if ($numpages > 1) : ?>
-    <div class="page-link-container" style="text-align: center !important; margin-top: 20px; margin-bottom: 23px;">
+    <div class="page-link-container" style="text-align: center !important; margin-top: 20px; margin-bottom: 20px;">
         <?php
         // This shows the Previous link
         wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
