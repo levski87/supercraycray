@@ -107,6 +107,7 @@ global $page, $pages, $numpages;
 </article>
 
 <?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+    <?php if (get_the_ID() != 7287 || ($page != 1)) : ?>
     <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -119,6 +120,7 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+    <?php endif; ?>
 <?php endif; ?>
 
 
