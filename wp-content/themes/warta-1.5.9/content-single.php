@@ -18,6 +18,7 @@ global $page, $pages, $numpages;
 ?>
 
 <?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+    <?php if (get_the_ID() != 7287 || ($page != 1)) : ?>
 
     <div class="adunit">
         <div style="font-size: 10px;">Advertisement</div>
@@ -31,6 +32,7 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+    <?php endif; ?>
 
 <?php elseif ($page < $numpages) :?>
     <div class="adunit">
