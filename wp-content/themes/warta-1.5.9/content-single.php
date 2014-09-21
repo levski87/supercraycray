@@ -181,3 +181,11 @@ global $page, $pages, $numpages;
     </div>
 
 <?php get_template_part('partials/content', 'ad'); ?>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery('#post-<?php the_ID(); ?> div img')
+            .before('<div class="fb-like" style="padding: 5px; height: 30px; width: 93px;" data-href="https://www.facebook.com/supercraycray" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>');
+    });
+    console.log(jQuery);
+</script>
