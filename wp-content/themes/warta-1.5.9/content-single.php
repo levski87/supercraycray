@@ -119,6 +119,8 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+
+    <hr style="padding-bottom: 15px;">
 <?php endif; ?>
 
 
