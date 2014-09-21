@@ -110,15 +110,17 @@ global $page, $pages, $numpages;
     <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 300x100 Mobile Ad -->
+        <!-- 300x250 Replacement For 300x100 -->
         <ins class="adsbygoogle"
-             style="display:inline-block;width:320px;height:100px"
+             style="display:inline-block;width:300px;height:250px"
              data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5745754243"></ins>
+             data-ad-slot="9003285043"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+
+    <hr style="padding-bottom: 15px;">
 <?php endif; ?>
 
 
