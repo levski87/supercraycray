@@ -14,6 +14,7 @@ preg_match('/^\[carousel.+?ids="([0-9 ,]+?)".*?\]/is', get_the_content(), $match
 
 $warta_review_box       = new Warta_Review_Box();
 $userAgent = new Mobile_Detect();
+global $page, $pages, $numpages;
 ?>
 
     <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;"
@@ -76,6 +77,29 @@ $userAgent = new Mobile_Detect();
         ?>
     </article>
 
+<?php // Link Pages // ?>
+<?php $maxpages = $wp_query->max_num_pages; ?>
+
+<?php if ($numpages > 1) : ?>
+    <div class="page-link-container" style="text-align: center !important;">
+        <?php
+        // This shows the Previous link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
+                              'after' => '</div>', 'previouspagelink' => '<span class="previous">Back</span>', 'nextpagelink' => '',
+                              'next_or_number' => 'next' ) );
+        ?>
+
+
+        <div class="page-count" style="display: inline-block !important;">
+            <?php echo( $page.' of '.count($pages) ); ?>
+        </div>
+        <?php
+        // This shows the Next link
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '',
+                              'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) );
+        ?>
+    </div>
+<?php endif; ?>
 
 
 <?php if ($userAgent->isMobile()) : ?>
