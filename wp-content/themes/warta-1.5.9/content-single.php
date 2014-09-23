@@ -182,6 +182,8 @@ global $page, $pages, $numpages;
 
 <?php get_template_part('partials/content', 'ad'); ?>
 
+<?php
+/* temp remove fb like button.
 <script>
     jQuery(document).ready(function() {
         jQuery('#post-<?php the_ID(); ?> div img')
@@ -189,6 +191,8 @@ global $page, $pages, $numpages;
     });
     console.log(jQuery);
 </script>
+ */
+?>
 
 <script type="text/javascript">
     (function() {
