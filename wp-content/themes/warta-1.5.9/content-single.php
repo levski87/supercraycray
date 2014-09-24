@@ -123,6 +123,25 @@ global $page, $pages, $numpages;
     <hr style="padding-bottom: 15px;">
 <?php endif; ?>
 
+<?php if (!$userAgent->isMobile() && ($page < $numpages)) : ?>
+
+    <!-- 336 x 280 Bottom -->
+    <div style="text-align:center; padding-top:17px;">
+        <div style="font-size: 10px;">Advertisement</div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 336 x 280 Bottom -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5947354244"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <hr>
+
+<?php endif; ?>
+
 
 <?php // Link Pages // ?>
 <?php $maxpages = $wp_query->max_num_pages; ?>
@@ -157,24 +176,6 @@ global $page, $pages, $numpages;
         </a>
     </div>
 <?php endif; ?>
-
-<?php if (!$userAgent->isMobile() && ($page < $numpages)) : ?>
-
-    <!-- 336 x 280 Bottom -->
-    <div style="text-align:center; padding-top:17px;">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 336 x 280 Bottom -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:336px;height:280px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5947354244"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
-<?php endif; ?>
-
 
     <div style="margin-top: 20px;">
         <?php comments_template('/comments-facebook.php'); ?>
