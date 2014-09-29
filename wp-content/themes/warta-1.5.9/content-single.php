@@ -18,7 +18,7 @@ global $page, $pages, $numpages;
 ?>
 
 <?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
-    <div style="text-align:center; padding-bottom:3px;">
+    <div style="text-align:center;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 300x100 Mobile Ad -->
