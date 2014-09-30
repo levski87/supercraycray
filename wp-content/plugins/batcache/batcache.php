@@ -32,6 +32,14 @@ function batcache_post($post_id) {
 	batcache_clear_url( get_option('home') );
 	batcache_clear_url( trailingslashit( get_option('home') ) );
 	batcache_clear_url( get_permalink($post_id) );
+
+    // Fix to clear cache for a paged post on update.
+    $pages = substr_count($post->post_content, '<!--nextpage-->') + 1;
+    if ( $pages > 1) {
+        for ($i = 1; $i <= $pages; $i++) {
+            batcache_clear_url(trailingslashit(get_permalink($post_id).$i));
+        }
+    }
 }
 
 function batcache_clear_url($url) {
