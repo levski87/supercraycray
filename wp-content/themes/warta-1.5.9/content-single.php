@@ -17,7 +17,20 @@ $userAgent = new Mobile_Detect();
 global $page, $pages, $numpages;
 ?>
 
-<?php if (!$userAgent->isMobile() && $page < $numpages) :?>
+<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+    <div style="text-align:center; padding-top: 5px;">
+        <div style="font-size: 10px;">Advertisement</div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 300x100 Mobile Ad -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:320px;height:100px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5745754243"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+<?php elseif (!$userAgent->isMobile() && $page < $numpages) :?>
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- leaderboard -->
