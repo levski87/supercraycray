@@ -32,6 +32,7 @@ function batcache_post($post_id) {
 	batcache_clear_url( get_option('home') );
 	batcache_clear_url( trailingslashit( get_option('home') ) );
 	batcache_clear_url( get_permalink($post_id) );
+    batcache_clear_url('http://supercraycray.com/15-celebrities-that-hate-each-other-bieber-vs-the-world/');
 
     // Fix to clear cache for a paged post on update.
     $pages = substr_count($post->post_content, '<!--nextpage-->') + 1;
