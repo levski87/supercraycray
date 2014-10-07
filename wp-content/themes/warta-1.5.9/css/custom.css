@@ -265,6 +265,9 @@
 
 
 /* Facebook Share buttons */
+#footer-main {
+    z-index: 0;
+}
 
 .floating-share-bar {
     position: fixed;

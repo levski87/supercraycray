@@ -166,10 +166,9 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding-top: 17px;">
+<div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
     <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
-        .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-        .str_replace(' ', '-', get_the_title())); ?>" target="_blank">
+        .get_permalink()); ?>" target="_blank">
         <i class="fa fa-facebook-square"></i> Share on Facebook
     </a>
 </div>
@@ -198,8 +197,7 @@ global $page, $pages, $numpages;
             event.preventDefault();
             FB.ui({
                 method: 'share',
-                href: '<?php echo get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-                    .str_replace(' ', '-', get_the_title()); ?>'
+                href: '<?php echo get_permalink(); ?>'
             },
             function(response) {});
         })
