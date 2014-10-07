@@ -168,9 +168,9 @@ global $page, $pages, $numpages;
 
 <?php //if ($userAgent->isMobile()) : ?>
     <div class="sswpds-social-wrap" style="padding-top: 17px;">
-        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
+        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-            .str_replace(' ', '-', get_the_title()); ?>" target="_blank">
+            .str_replace(' ', '-', get_the_title())); ?>" target="_blank">
             <i class="fa fa-facebook-square"></i> Share on Facebook
         </a>
     </div>
@@ -190,7 +190,7 @@ global $page, $pages, $numpages;
     </div>
     <div class="fb-like-button col-xs-5">
         <div class="fb-like" data-href="https://www.facebook.com/supercraycray" data-layout="button_count"
-             data-action="like" data-show-faces="false" data-share="false" data-colorscheme="dark"></div>
+             data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
 </div>
 
@@ -200,11 +200,10 @@ global $page, $pages, $numpages;
             event.preventDefault();
             FB.ui({
                 method: 'share',
-                href: '<?php echo get_permalink(); ?>'
+                href: '<?php echo get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
+                    .str_replace(' ', '-', get_the_title()); ?>'
             },
-            function(response) {
-                console.log(response);
-            });
+            function(response) {});
         })
     })
 </script>
