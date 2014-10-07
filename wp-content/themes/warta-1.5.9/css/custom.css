@@ -269,6 +269,7 @@
 .floating-share-bar {
     position: fixed;
     left: 50%;
+    margin-left: -16%;
     bottom: 0;
     padding: 10px 15px;
     background: rgba(241,243,243,0.8);
@@ -285,9 +286,27 @@
     box-shadow: 0 -1px 7px rgba(0,0,0,0.5);
 }
 
+@media (max-width: 992px) {
+    .floating-share-bar {
+        left: 0;
+        margin-left: 0;
+    }
+}
+
 .fb-share-button {
     border-radius: 5px;
     background-color: #2a5697;
     padding: 4px 6px;
     font-size: 23px;
+}
+.fb-share-button a {
+    color: #ffffff;
+}
+
+.fb-like-button {
+    border-radius: 5px;
+    background-color: rgb(42, 86, 151);
+    padding: 10px 6px;
+    min-height: 40px;
+    max-height: 40px;
 }

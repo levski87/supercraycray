@@ -166,29 +166,27 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<?php //if ($userAgent->isMobile()) : ?>
-    <div class="sswpds-social-wrap" style="padding-top: 17px;">
-        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
-            .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
-            .str_replace(' ', '-', get_the_title())); ?>" target="_blank">
-            <i class="fa fa-facebook-square"></i> Share on Facebook
-        </a>
-    </div>
-<?php //endif; ?>
+<div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding-top: 17px;">
+    <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
+        .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
+        .str_replace(' ', '-', get_the_title())); ?>" target="_blank">
+        <i class="fa fa-facebook-square"></i> Share on Facebook
+    </a>
+</div>
 
-    <div style="margin-top: 20px;">
-        <?php comments_template('/comments-facebook.php'); ?>
-    </div>
+<div style="margin-top: 20px;">
+    <?php comments_template('/comments-facebook.php'); ?>
+</div>
 
 <?php get_template_part('partials/content', 'ad'); ?>
 
-<div class="col-xs-3 floating-share-bar" style="margin-left: -16%;">
+<div class="col-md-4 col-xs-12 floating-share-bar">
     <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
         <a href id="fb-floating-share">
             <i class="fa fa-facebook-square"></i> Share
         </a>
     </div>
-    <div class="fb-like-button col-xs-5">
+    <div class="fb-like-button col-xs-4 col-xs-offset-1 text-center">
         <div class="fb-like" data-href="https://www.facebook.com/supercraycray" data-layout="button_count"
              data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
