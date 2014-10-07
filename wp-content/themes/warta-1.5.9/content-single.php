@@ -166,7 +166,7 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<?php if ($userAgent->isMobile()) : ?>
+<?php //if ($userAgent->isMobile()) : ?>
     <div class="sswpds-social-wrap" style="padding-top: 17px;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u=')
             .get_permalink().'?&utm_source=facebook&utm_medium=share&utm_campaign='
@@ -174,13 +174,40 @@ global $page, $pages, $numpages;
             <i class="fa fa-facebook-square"></i> Share on Facebook
         </a>
     </div>
-<?php endif; ?>
+<?php //endif; ?>
 
     <div style="margin-top: 20px;">
         <?php comments_template('/comments-facebook.php'); ?>
     </div>
 
 <?php get_template_part('partials/content', 'ad'); ?>
+
+<div class="col-xs-3 floating-share-bar" style="margin-left: -16%;">
+    <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
+        <a href id="fb-floating-share">
+            <i class="fa fa-facebook-square"></i> Share
+        </a>
+    </div>
+    <div class="fb-like-button col-xs-5">
+        <div class="fb-like" data-href="https://www.facebook.com/supercraycray" data-layout="button_count"
+             data-action="like" data-show-faces="false" data-share="false" data-colorscheme="dark"></div>
+    </div>
+</div>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery('#fb-floating-share').click(function() {
+            event.preventDefault();
+            FB.ui({
+                method: 'share',
+                href: '<?php echo get_permalink(); ?>'
+            },
+            function(response) {
+                console.log(response);
+            });
+        })
+    })
+</script>
 
 <?php
 /* temp remove fb like button.
