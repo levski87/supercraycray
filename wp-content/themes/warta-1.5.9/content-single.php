@@ -179,30 +179,33 @@ global $page, $pages, $numpages;
 
 <?php get_template_part('partials/content', 'ad'); ?>
 
-<div class="col-md-4 col-xs-12 floating-share-bar">
-    <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
-        <a href id="fb-floating-share">
-            <i class="fa fa-facebook-square"></i> Share
-        </a>
+<?php if ($page > 3) : ?>
+    <div class="col-md-4 col-xs-12 floating-share-bar">
+        <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
+            <a href id="fb-floating-share">
+                <i class="fa fa-facebook-square"></i> Share
+            </a>
+        </div>
+        <div class="fb-like-button col-xs-4 col-xs-offset-1 text-center">
+            <div class="fb-like" data-href="https://www.facebook.com/supercraycray" data-layout="button_count"
+                 data-action="like" data-show-faces="false" data-share="false"></div>
+        </div>
     </div>
-    <div class="fb-like-button col-xs-4 col-xs-offset-1 text-center">
-        <div class="fb-like" data-href="https://www.facebook.com/supercraycray" data-layout="button_count"
-             data-action="like" data-show-faces="false" data-share="false"></div>
-    </div>
-</div>
 
-<script>
-    jQuery(document).ready(function() {
-        jQuery('#fb-floating-share').click(function() {
-            event.preventDefault();
-            FB.ui({
-                method: 'share',
-                href: '<?php echo get_permalink(); ?>'
-            },
-            function(response) {});
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('#fb-floating-share').click(function() {
+                event.preventDefault();
+                FB.ui({
+                    method: 'share',
+                    href: '<?php echo get_permalink(); ?>'
+                },
+                function(response) {});
+            })
         })
-    })
-</script>
+    </script>
+<?php endif ?>
+
 
 <?php
 /* temp remove fb like button.
