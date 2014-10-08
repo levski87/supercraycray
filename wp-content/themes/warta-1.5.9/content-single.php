@@ -166,12 +166,14 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
-    <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
-        .get_permalink()); ?>" target="_blank">
-        <i class="fa fa-facebook-square"></i> Share on Facebook
-    </a>
-</div>
+<?php if ($userAgent->isMobile()) : ?>
+    <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
+        <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
+            .get_permalink()); ?>" target="_blank">
+            <i class="fa fa-facebook-square"></i> Share on Facebook
+        </a>
+    </div>
+<?php endif; ?>
 
 <div style="margin-top: 20px;">
     <?php comments_template('/comments-facebook.php'); ?>
