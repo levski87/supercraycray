@@ -1,5 +1,18 @@
+<!-- Taboola Bottom of post -->
+<div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({
+        mode: 'thumbs-2r',
+        container: 'taboola-below-article-thumbnails',
+        placement: 'Below Article Thumbnails',
+        target_type: 'mix'
+    });
+</script>
+
+
 <?php // Removed the div from bottom of post. ?>
-<div id="contentad26326" style="text-align: center;"></div>
+<?php //<div id="contentad26326" style="text-align: center;"></div> ?>
 <script type="text/javascript">
     (function() {
         var params =

@@ -64,5 +64,12 @@ global $friskamax_warta, $friskamax_warta_var;
 </script>
 <div id="fb-root"></div>
 <?php wp_footer(); ?>
+
+<!-- Taboola Flush -->
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+
 </body>
 </html>
