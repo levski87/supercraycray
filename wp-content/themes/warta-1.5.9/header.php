@@ -25,8 +25,6 @@ global  $friskamax_warta,
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53eaeb1319248feb"></script>
-
-    <!-- Taboola Load -->
     <script type="text/javascript">
         window ._taboola = window._taboola || [];
         _taboola.push({article:'auto'});

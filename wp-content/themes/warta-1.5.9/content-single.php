@@ -220,3 +220,31 @@ global $page, $pages, $numpages;
 </script>
  */
 ?>
+
+<script type="text/javascript">
+    (function() {
+        var source      = 15728;
+        var msource     = 15729;
+        var type        = "responsive-unit-pt-10";
+        var key         = "6451d83fdb91e6d1605340fa608bc7b8996";
+        var ssl         = "0";
+        var pubid       = 6451;
+        var widget      = 0;
+        var hc          = "000000";
+        var bc          = "bbbbbb";
+        var dl_cxr      = "3x3";
+        var d_cxr       = "3x3";
+        var t_cxr       = "3x3";
+        var p_cxr       = "2x3f";
+        var provider    = 0;
+        var brand_label = "Sponsored by RevContent";
+        var brand_pos   = "bottom_right";
+        var bts         = 15728;
+        var pu          = new String(document.referrer || top.location.href || document.URL).substr(0,700);
+        var el          = document.createElement("script");
+        el.type         = "text/javascript";
+        el.src          = "http://api.revcontent.com/respond/serve.js.php?source="+source+"&msource="+msource+"&dl_cxr="+dl_cxr+"&d_cxr="+d_cxr+"&t_cxr="+t_cxr+"&p_cxr="+p_cxr+"&provider="+provider+"&brand_label="+brand_label+"&brand_pos="+brand_pos+"&type="+type+"&key="+key+"&ssl="+ssl+"&pubid="+pubid+"&widget="+widget+"&hc="+hc+"&bc="+bc+"&c="+(new Date()).getTime() + "&width=" + document.documentElement.clientWidth + "&bts=" + bts + "&pu=" + escape(pu);
+        el.async = true;
+        document.getElementById("rc_15728_m15729_responsive-unit-pt-10").appendChild(el);
+    })();
+</script>
