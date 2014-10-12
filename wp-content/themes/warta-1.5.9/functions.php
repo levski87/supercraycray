@@ -15,6 +15,11 @@ function fbOpenGraph() {
 }
 add_action('wp_head', 'fbOpenGraph');
 
+function headerPixels() {
+    include dirname(__FILE__) . '/partials/header-pixels.php';
+}
+add_action('wp_head', 'headerPixels');
+
 
 
 
