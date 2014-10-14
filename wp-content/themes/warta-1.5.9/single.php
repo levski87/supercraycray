@@ -40,8 +40,10 @@ warta_page_title(
                         switch ($postFormat) {
                             case 'video':
                                 get_template_part('content', 'single-video');
+                                break;
                             case 'noad':
                                 get_template_part('content', 'single-noad');
+                                break;
                         }
 
                     else :

@@ -17,7 +17,8 @@ $userAgent = new Mobile_Detect();
 global $page, $pages, $numpages;
 ?>
 
-<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+<?php // MOBILE ADs ?>
+<?php if ($userAgent->isMobile() && ($page < $numpages) && !$userAgent->isTablet()) : ?>
     <div style="text-align:center; padding-top: 5px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -30,7 +31,23 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-<?php elseif (!$userAgent->isMobile() && $page < $numpages) :?>
+
+<?php // TABLET ADs ?>
+<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
+    <div class="adunit">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- leaderboard -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="2271573049"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+<?php // DESKTOP ADs ?>
+<?php elseif ($page < $numpages) :?>
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- leaderboard -->
@@ -104,7 +121,8 @@ global $page, $pages, $numpages;
  ?>
 </article>
 
-<?php if ($userAgent->isMobile() && ($page < $numpages)) : ?>
+<?php // MOBILE ADs ?>
+<?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
 
     <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
@@ -120,9 +138,26 @@ global $page, $pages, $numpages;
     </div>
 
     <hr style="padding-bottom: 15px;">
-<?php endif; ?>
 
-<?php if (!$userAgent->isMobile() && ($page < $numpages)) : ?>
+<?php // TABLET ADs ?>
+<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
+    <!-- 336 x 280 Bottom -->
+    <div style="text-align:center; padding-top:17px;">
+        <div style="font-size: 10px;">Advertisement</div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 336 x 280 Bottom -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-4528087481844577"
+             data-ad-slot="5947354244"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <hr>
+
+<?php // DESKTOP ADs ?>
+<?php elseif ($page < $numpages) : ?>
 
     <!-- 336 x 280 Bottom -->
     <div style="text-align:center; padding-top:17px;">
@@ -166,7 +201,7 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<?php if ($userAgent->isMobile()) : ?>
+<?php if ($userAgent->isMobile() && !$userAgent->isTablet()) : ?>
     <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink()); ?>" target="_blank">
@@ -207,44 +242,3 @@ global $page, $pages, $numpages;
         })
     </script>
 <?php endif ?>
-
-
-<?php
-/* temp remove fb like button.
-<script>
-    jQuery(document).ready(function() {
-        jQuery('#post-<?php the_ID(); ?> div img')
-            .before('<div class="fb-like" style="padding: 5px; height: 30px; width: 93px;" data-href="https://www.facebook.com/supercraycray" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>');
-    });
-    console.log(jQuery);
-</script>
- */
-?>
-
-<script type="text/javascript">
-    (function() {
-        var source      = 15728;
-        var msource     = 15729;
-        var type        = "responsive-unit-pt-10";
-        var key         = "6451d83fdb91e6d1605340fa608bc7b8996";
-        var ssl         = "0";
-        var pubid       = 6451;
-        var widget      = 0;
-        var hc          = "000000";
-        var bc          = "bbbbbb";
-        var dl_cxr      = "3x3";
-        var d_cxr       = "3x3";
-        var t_cxr       = "3x3";
-        var p_cxr       = "2x3f";
-        var provider    = 0;
-        var brand_label = "Sponsored by RevContent";
-        var brand_pos   = "bottom_right";
-        var bts         = 15728;
-        var pu          = new String(document.referrer || top.location.href || document.URL).substr(0,700);
-        var el          = document.createElement("script");
-        el.type         = "text/javascript";
-        el.src          = "http://api.revcontent.com/respond/serve.js.php?source="+source+"&msource="+msource+"&dl_cxr="+dl_cxr+"&d_cxr="+d_cxr+"&t_cxr="+t_cxr+"&p_cxr="+p_cxr+"&provider="+provider+"&brand_label="+brand_label+"&brand_pos="+brand_pos+"&type="+type+"&key="+key+"&ssl="+ssl+"&pubid="+pubid+"&widget="+widget+"&hc="+hc+"&bc="+bc+"&c="+(new Date()).getTime() + "&width=" + document.documentElement.clientWidth + "&bts=" + bts + "&pu=" + escape(pu);
-        el.async = true;
-        document.getElementById("rc_15728_m15729_responsive-unit-pt-10").appendChild(el);
-    })();
-</script>

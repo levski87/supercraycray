@@ -6,7 +6,7 @@
  */
 // dirty mobile check... @TODO clean up
 $mobCheck = new Mobile_Detect();
-if (!$mobCheck->isMobile()) :
+if (!$mobCheck->isMobile() || $mobCheck->isTablet()) :
 // Get $friskamax_warta global variables
 global $friskamax_warta_var;
 
