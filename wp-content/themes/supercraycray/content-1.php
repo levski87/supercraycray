@@ -25,17 +25,19 @@ switch ($format) {
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( "col-sm-4 article-large $no_image" ); ?>>
 <?php   // Display featured image and title
-        if( has_post_thumbnail() ) : 
-                warta_featured_image();
-        elseif($format == 'image' && !!$match_image) :
-                warta_featured_image( $match_image );
-        elseif($format == 'gallery' && !!$match_gallery) :
-                $attachment_src = wp_get_attachment_image_src( $match_gallery['image_ids'][0], 'huge');        
-                warta_featured_image( array(
-                        'image'     => wp_get_attachment_image( $match_gallery['image_ids'][0], 'full' ),
-                        'image_url' => $attachment_src[0],
-                ) );
-        else:
+        if( has_post_thumbnail() ) :?> 
+                <div class="frame thick clearfix">
+
+                        <a href="<?php echo esc_url( wp_get_attachment_image_src( get_post_thumbnail_id(), 'huge')[0] ); ?>" 
+                           title="<?php the_title() ?>" data-zoom>
+<?php                                   echo get_the_post_thumbnail( NULL, 'full' ); ?>
+                                <div class="image-light"></div>
+                        </a><!--thumbnail image-->
+                <div class='home-overlay'>
+                        <a href="<?php the_permalink() ?>" class="title"><h4><?php the_title() ?></h4></a>
+                </div>
+                </div><!--.frame-->                            
+<?php   else:
                 switch ($format) :
                         case 'audio':
                         case 'video':

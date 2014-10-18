@@ -142,6 +142,63 @@
 }
 
 /*
+SCC Home Page
+=============================================================
+*/
+.entry-content img,
+.comment-container .comment img,
+.article-large img,
+.featured-media img {
+  max-width: 500px !important;
+  height: auto;
+}
+/* BLOG VERSION 1 */
+#blog-version-1 #main-content .article-large {
+  padding: 0 0 0 10px;
+  height: 213px;
+}
+#blog-version-1 #main-content .article-large .featured-media {
+  margin: 15px 0;
+}
+#blog-version-1 #main-content .article-large.no-image > .post-meta,
+#blog-version-1 #main-content .article-large.no-image .title {
+  border-bottom: 1px solid #e0e0e8;
+  display: block;
+  padding-bottom: 10px;
+}
+#blog-version-1 #main-content .article-large.no-image > .post-meta {
+  padding-top: 10px;
+}
+#blog-version-1 #main-content article .footer,
+#blog-version-2 #main-content article .footer {
+  border-bottom: 1px solid #e0e0e8;
+  display: table;
+  margin-bottom: 45px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+#blog-version-1 #main-content article .footer .tags,
+#blog-version-2 #main-content article .footer .tags,
+#blog-version-1 #main-content article .footer .read-more,
+#blog-version-2 #main-content article .footer .read-more {
+  display: table-cell;
+  vertical-align: top;
+}
+#blog-version-1 #main-content article .footer .read-more,
+#blog-version-2 #main-content article .footer .read-more {
+  width: 1%;
+}
+#blog-version-1 #main-content article .footer .tags,
+#blog-version-2 #main-content article .footer .tags {
+  padding-right: 10px;
+  width: 99%;
+}
+#blog-version-1 #main-content article .frame .post-meta,
+#blog-version-2 #main-content article .frame .post-meta {
+  margin: 0;
+}
+
+/*
 
 #main-content p span {
   font-size:15px !important;
