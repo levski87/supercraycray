@@ -149,13 +149,15 @@ SCC Home Page
 .comment-container .comment img,
 .article-large img,
 .featured-media img {
-  max-width: 500px !important;
+  max-width: 360px !important;
   height: auto;
+  max-height: 200px;
 }
 /* BLOG VERSION 1 */
 #blog-version-1 #main-content .article-large {
   padding: 0 0 0 10px;
   height: 213px;
+  margin-bottom: 20px;
 }
 #blog-version-1 #main-content .article-large .featured-media {
   margin: 15px 0;
@@ -196,6 +198,72 @@ SCC Home Page
 #blog-version-1 #main-content article .frame .post-meta,
 #blog-version-2 #main-content article .frame .post-meta {
   margin: 0;
+}
+/* FRAME */
+.frame {
+  background-color: white;
+  border: 1px solid #e0e0e8;
+  padding: 4px;
+}
+.frame.thick {
+  padding: 9px;
+  height: 215px;
+}
+.frame > * {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Return to top Arrow */
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 
 /*

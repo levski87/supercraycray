@@ -30,12 +30,9 @@ switch ($format) {
 
                         <a href="<?php echo esc_url( wp_get_attachment_image_src( get_post_thumbnail_id(), 'huge')[0] ); ?>" 
                            title="<?php the_title() ?>" data-zoom>
-<?php                                   echo get_the_post_thumbnail( NULL, 'full' ); ?>
+<?php                                   echo get_the_post_thumbnail( NULL, array(350,190) ); ?>
                                 <div class="image-light"></div>
                         </a><!--thumbnail image-->
-                <div class='home-overlay'>
-                        <a href="<?php the_permalink() ?>" class="title"><h4><?php the_title() ?></h4></a>
-                </div>
                 </div><!--.frame-->                            
 <?php   else:
                 switch ($format) :

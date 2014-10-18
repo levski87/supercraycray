@@ -46,7 +46,30 @@ global $friskamax_warta, $friskamax_warta_var;
 <?php                   get_sidebar(); ?>
                 </div>
         </div>
+        <!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href=<?php get_template_directory_uri() .  '/css/font-awesome.css'?> rel="stylesheet">
 </div><!--#content-->
+<script type="text/javascript" src=<?php echo get_template_directory_uri() . '/js/jquery-2.1.1.min.js'?>></script>
+
+<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script>
 
 <?php 
 get_footer();
