@@ -28,10 +28,12 @@ switch ($format) {
         if( has_post_thumbnail() ) :?> 
                 <div class="frame thick clearfix">
 
-                        <a href="<?php echo esc_url( wp_get_attachment_image_src( get_post_thumbnail_id(), 'huge')[0] ); ?>" 
-                           title="<?php the_title() ?>" data-zoom>
+                        <a href="<?php the_permalink(); ?>" 
+                           title="<?php the_title() ?>">
+                                <div class='home-image-container-small'>
 <?php                                   echo get_the_post_thumbnail( NULL, array(350,190) ); ?>
-                                <div class="image-light"></div>
+                                        <div class='home-image-overlay-small'>text</div>
+                                </div>
                         </a><!--thumbnail image-->
                 </div><!--.frame-->                            
 <?php   else:
@@ -40,7 +42,6 @@ switch ($format) {
                         case 'video':
                         case 'image':
                         case 'gallery': ?>
-                                <a href="<?php the_permalink() ?>" class="title"><h4><?php the_title() ?></h4></a>
 <?php                           echo warta_post_meta();
                                 if( !!$featured_media ) : ?>
                                         <div class="featured-media"><?php echo $featured_media ?></div>

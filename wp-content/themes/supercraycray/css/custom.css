@@ -145,13 +145,11 @@
 SCC Home Page
 =============================================================
 */
-.entry-content img,
-.comment-container .comment img,
-.article-large img,
-.featured-media img {
-  max-width: 360px !important;
+.home-image-container-small img {
+  min-width: 360px !important;
+  width: auto;
   height: auto;
-  max-height: 200px;
+  max-height: 190px;
 }
 /* BLOG VERSION 1 */
 #blog-version-1 #main-content .article-large {
@@ -199,6 +197,27 @@ SCC Home Page
 #blog-version-2 #main-content article .frame .post-meta {
   margin: 0;
 }
+
+/* Image Title Overlays */
+.home-image-container-small {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.home-image-container-small .home-image-overlay-small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.home-image-container-small:hover .home-image-overlaoverla-small {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
 /* FRAME */
 .frame {
   background-color: white;
