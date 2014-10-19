@@ -19,6 +19,7 @@ global $friskamax_warta, $friskamax_warta_var;
 <?php                                   $friskamax_warta_var['sidebar_counter'] = 0;
                                         dynamic_sidebar('archive-before-content-section');  ?>                    
                                 </div>
+                                        <!--Row of posts that's loaded for each infinite scroll page -->
                                         <div class="row" id='inf-content-scroll'>
 <?php   
                                         /**
@@ -48,25 +49,25 @@ global $friskamax_warta, $friskamax_warta_var;
 <?php                   get_sidebar(); ?>
                 </div>
         </div>
-        <!-- Return to Top -->
+<!-- Return to Top Button -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-
-<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
 <link href=<?php get_template_directory_uri() .  '/css/font-awesome.css'?> rel="stylesheet">
+
 </div><!--#content-->
+<!-- Return to top script -->
 <script>
 // ===== Scroll to Top ==== 
+// Source: http://codepen.io/rdallaire/pen/apoyx
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    if ($(this).scrollTop() >= 200) {
+        $('#return-to-top').fadeIn(200);
     } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        $('#return-to-top').fadeOut(200);
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').click(function() {
     $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop : 0
     }, 500);
 });
 </script>
