@@ -172,7 +172,7 @@ SCC Home Page
 #blog-version-1 #main-content .article-large {
   padding: 0 0 0 10px;
   height: 213px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media (max-width: 600px) {
   #blog-version-1 #main-content .article-large {
@@ -239,26 +239,36 @@ SCC Home Page
   }
 }
 
-.home-image-container-small .home-image-overlay-small {
-    position: absolute;
+.home-image-overlay-small {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 25%;
+    height: 47px;
     display: none;
     color: #FFF;
     display: block;
-    background: rgba(163, 163, 163, 0.6);
+    background: #ff9a03;
     text-align: left;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1;
     padding-top: 4px;
     padding-left: 10px;
 }
 
+.home-image-container-small:hover .home-image-overlay-small {
+  color: #D7D7D7;
+}
+
+@media (min-width: 1200px) {
+  .home-image-overlay-small {
+    width: 360px;
+  }
+}
+
 @media (max-width: 600px) {
-  .home-image-container-small .home-image-overlay-small {
-    height: 15%;
+  .home-image-overlay-small {
+    height: 47px;
+    width: 100%;
     padding-top: 2%;
     padding-left: 0px;
     text-align: center;
@@ -266,19 +276,20 @@ SCC Home Page
 }
 
 @media (min-width: 600px) and (max-width: 991px) {
-  .home-image-container-small .home-image-overlay-small {
+  .home-image-overlay-small {
     font-size: 14px;
     text-align: center;
     line-height: 20px;
     padding-left: 0px;
     left: 40%;
+    width: 100%;
   }
 }
 
 /* FRAME */
 .frame {
   background-color: white;
-  border: 1px solid #e0e0e8;
+  border: 0px solid #e0e0e8 !important;
   padding: 4px;
 }
 .frame.thick {
@@ -305,8 +316,8 @@ SCC Home Page
     position: fixed;
     bottom: 20px;
     right: 13px;
-    background: rgb(255, 154, 3);
-    background: rgba(255, 154, 3, 0.7);
+    background: rgb(47, 47, 47);
+    background: rgba(47, 47, 47, 0.7);
     width: 50px;
     height: 50px;
     display: block;
@@ -335,15 +346,20 @@ SCC Home Page
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(163, 163, 163, 0.9);
+    background: rgba(155, 155, 155, 0.9);
 }
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
 }
 /* Infinite Scroll Loading Image */
+#infscr-loading {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
 #infscr-loading img { 
-  text-align: center; 
+  display: none; 
 }
 
 /*
