@@ -172,7 +172,7 @@ SCC Home Page
 #blog-version-1 #main-content .article-large {
   padding: 0 0 0 10px;
   height: 213px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 @media (max-width: 600px) {
   #blog-version-1 #main-content .article-large {
@@ -243,7 +243,8 @@ SCC Home Page
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 47px;
+    height: auto;
+    min-height: 50px;
     display: none;
     color: #FFF;
     display: block;
@@ -253,6 +254,8 @@ SCC Home Page
     line-height: 1;
     padding-top: 4px;
     padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
 }
 
 .home-image-container-small:hover .home-image-overlay-small {
@@ -267,9 +270,10 @@ SCC Home Page
 
 @media (max-width: 600px) {
   .home-image-overlay-small {
-    height: 47px;
+    height: auto;
     width: 100%;
     padding-top: 2%;
+    min-height: 40px;
     padding-left: 0px;
     text-align: center;
   }
@@ -280,7 +284,8 @@ SCC Home Page
     font-size: 14px;
     text-align: center;
     line-height: 20px;
-    padding-left: 0px;
+    padding-left: 3px;
+    padding-right: 4px;
     left: 40%;
     width: 100%;
   }
@@ -292,10 +297,12 @@ SCC Home Page
   border: 0px solid #e0e0e8 !important;
   padding: 4px;
 }
+
 .frame.thick {
   padding: 9px;
   height: auto;
 }
+
 .frame > * {
   max-width: 100%;
   overflow: hidden;

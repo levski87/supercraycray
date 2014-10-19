@@ -7,6 +7,8 @@
 
 global $friskamax_warta, $friskamax_warta_var;
 ?>
+<script type="text/javascript" src=<?php echo get_template_directory_uri() . '/js/jquery-2.1.1.min.js'?>></script>
+<script type="text/javascript" src=<?php echo get_template_directory_uri() . "/js/jquery.fittext.js"?>></script>
 </header><!--header-->
 
 <div id="content">
@@ -53,8 +55,6 @@ global $friskamax_warta, $friskamax_warta_var;
 <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
 <link href=<?php get_template_directory_uri() .  '/css/font-awesome.css'?> rel="stylesheet">
 </div><!--#content-->
-<script type="text/javascript" src=<?php echo get_template_directory_uri() . '/js/jquery-2.1.1.min.js'?>></script>
-
 <script>
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
@@ -71,25 +71,6 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 </script>
 
-<script>
-$(function(){
-
-    var $quote = $("#title-text");
-    
-    var $numWords = $quote.text().split(" ").length;
-    
-    if (($numWords >= 1) && ($numWords < 8)) {
-        $quote.css("font-size", "25px !important");
-    }
-    else if (($numWords >= 15) && ($numWords < 30)) {
-        $quote.css("font-size", "14px !important");
-    }
-    else {
-        $quote.css("font-size", "19px");
-    }    
-        
-});
-</script>
 
 <?php 
 get_footer();
