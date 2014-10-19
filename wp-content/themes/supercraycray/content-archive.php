@@ -71,5 +71,25 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 </script>
 
+<script>
+$(function(){
+
+    var $quote = $("#title-text");
+    
+    var $numWords = $quote.text().split(" ").length;
+    
+    if (($numWords >= 1) && ($numWords < 8)) {
+        $quote.css("font-size", "25px !important");
+    }
+    else if (($numWords >= 15) && ($numWords < 30)) {
+        $quote.css("font-size", "14px !important");
+    }
+    else {
+        $quote.css("font-size", "19px");
+    }    
+        
+});
+</script>
+
 <?php 
 get_footer();

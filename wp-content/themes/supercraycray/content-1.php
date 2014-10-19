@@ -32,7 +32,7 @@ switch ($format) {
                            title="<?php the_title() ?>">
                                 <div class='home-image-container-small'>
 <?php                                   echo get_the_post_thumbnail( NULL, array(350,190) ); ?>
-                                <div class='home-image-overlay-small'><?php the_title(); ?></div>
+                                <div class='home-image-overlay-small' id='title-text'><?php the_title(); ?></div>
                                 </div>
                         </a><!--thumbnail image-->
                 </div><!--.frame-->                            
