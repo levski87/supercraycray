@@ -210,10 +210,6 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<div style="margin-top: 20px;">
-    <?php comments_template('/comments-facebook.php'); ?>
-</div>
-
 <?php get_template_part('partials/content', 'ad'); ?>
 
 <?php if ($page > 3) : ?>
