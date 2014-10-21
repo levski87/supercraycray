@@ -19,8 +19,8 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
     <div id="title">
         <div class="image-light"></div>
         <div class="container">
-            <div class="title-container col-md-12">
-                
+            <div class="title-container col-md-8 col-md-offset-2">
+
                 <?php if($one_line) : ?>
                 
                     <h1>
@@ -36,7 +36,8 @@ function warta_page_title( $primary, $secondary, $one_line = false ) {
                 <?php elseif (is_single()) : ?>
                 
                     <?php if( !empty($primary) ) : ?>
-                        <h1 class="primary" style="color: black !important;"><?php echo $primary ?></h1>
+                        <h1 class="primary text-center"><?php echo $primary ?></h1>
+                        <hr>
                     <?php endif ?>
                     
                 <?php else : ?>

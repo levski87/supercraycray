@@ -164,10 +164,13 @@
 
 
 #title .container .title-container .primary {
+  font-family: 'PT Sans', sans-serif !important;
   background: none !important;
-  font-size: 36px;
-  line-height: 100%;
+  font-size: 55px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   padding-left: 0px !important;
+  color: #2a2a2a;
 }
 
 #title {
