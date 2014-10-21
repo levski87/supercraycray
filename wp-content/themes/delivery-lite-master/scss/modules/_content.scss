@@ -1,0 +1,135 @@
+.site-content {
+	@extend .container;
+	@include pxrem(margin-bottom, 30px);
+}
+
+.content-area {
+	@include pxrem(padding, 20px 20px 30px 20px);
+	border: 1px solid $border-color;
+
+	@include min-screen(320px) {
+		@include pxrem(margin-bottom, 30px);
+		width: 100%;
+		float: none;
+	}
+
+	@include min-screen(768px) {
+		width: 66%;
+		margin-bottom: 0;
+		float: left;
+	}
+
+	.has-left-sidebar & {
+
+		@include min-screen(1024px) {
+			@include pxrem(margin-left, -1px);
+			width: 49.1%;
+		}
+
+	}
+
+}
+
+.hentry {
+	@extend %clearfix;
+	@include pxrem(margin-bottom, 30px);
+	@include pxrem(padding-bottom, 30px);
+	border-bottom: 1px solid $border-color;
+
+	.edit-link {
+		display: block;
+		clear: both;
+	}
+}
+
+.entry-title {
+	@include font-size(20, true);
+	font-weight: normal;
+
+	.single &,
+	.page & {
+		@include font-size(26);
+		line-height: 1.2;
+	}
+
+	a {
+		color: #474747;
+		&:hover {
+			color: $link-color;
+		}
+	}
+
+}
+
+.thumb-link {
+	@include pxrem(margin, 15px 15px 0 0);
+	display: inline;
+	float: left;
+	img {
+		box-shadow: 0 0 3px rgba($black, .2);
+	}
+}
+
+.entry-header-index {
+	overflow: hidden;
+}
+
+.entry-meta {
+	@extend %clearfix;
+	@include font-size(13);
+	@include pxrem(margin-bottom, 10px);
+	color: $gray-darker;
+
+	.published {
+		color: $gray-darker;
+	}
+
+	.comments-link {
+		float: right;
+		a {
+			color: $gray-darker;
+		}
+		.dashicons {
+			color: $accent-1;
+		}
+	}
+}
+
+.entry-summary {
+	overflow: hidden;
+}
+
+.entry-content {
+	@include pxrem(margin-bottom, 30px);
+}
+
+.entry-footer {
+	@include font-size(12);
+	clear: both;
+	color: $gray-darker;
+}
+
+.cat-links,
+.tags-links {
+	display: block;
+}
+
+.page-links {
+	clear: both;
+	display: block;
+}
+
+/**
+ * 404 page
+ */
+.not-found {
+
+	h2 {
+		@include font-size(16);
+	}
+
+	div {
+		@include pxrem(margin-bottom, 40px);
+	}
+
+}

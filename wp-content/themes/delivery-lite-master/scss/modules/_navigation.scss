@@ -1,0 +1,175 @@
+/**
+ * Primary navigation
+ */
+
+// Accent navigation color
+$color-nav: #2aa4cf;
+
+#primary-menu {
+
+	@include min-screen(320px) {
+		display: none;
+	}
+
+	@include min-screen(601px) {
+		display: block;
+	}
+
+}
+
+.main-navigation {
+	@extend %clearfix;
+	box-shadow: rgba($black, .2) 0px 2px 2px -1px;
+	background-color: $accent-1;
+	border-bottom: 1px solid #2693BA;
+}
+
+.navigation-item {
+	@extend .container;
+}
+
+.menu-primary-items {
+	@include span(9 of 12);
+
+	.sfHover {
+		background-color: $color-nav;
+	}
+
+	a {
+		@include font-size(11);
+		@include pxrem(padding, 14px 18px);
+		color: $white;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		&:hover,
+		&:visited:hover {
+			background-color: $color-nav;
+			color: $white;
+		}
+	}
+
+	.sub-menu {
+		a {
+			@extend .sfHover;
+			&:hover {
+				background-color: $accent-1;
+			}
+		}
+	}
+
+}
+
+.mobile-menu {
+	
+	.dashicons {
+		@include font-size(40);
+		color: $black;
+	}
+
+	@include min-screen(320px) {
+		display: block;
+	}
+
+	@include min-screen(601px) {
+		display: none;
+	}
+}
+
+/**
+ * Secondary navigation
+ */
+.secondary-navigation {
+	position: relative;
+	margin-bottom: -1px;
+	z-index: 9;
+}
+
+.menu-secondary-items {
+	@extend %clearfix;
+	@extend %button;
+	border: 1px solid $border-color;
+	border-bottom-color: $gray-light;
+
+	@include min-screen(320px) {
+		display: none;
+	}
+
+	@include min-screen(601px) {
+		display: block;
+	}
+
+	.sfHover {
+		background: $white-darker;
+		color: #666;
+	}
+
+	a {
+		@include font-size(13);
+		@include pxrem(padding, 12px 18px);
+		border-right: 1px solid #e3e3e3;
+		color: #888;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		&:hover,
+		&:visited:hover {
+			background: $white-darker;
+			color: #666;
+		}
+	}
+
+	&.sf-arrows .sf-with-ul:after {
+		border-top-color: $gray-light;
+	}
+
+	&.sf-arrows ul .sf-with-ul:after {
+		border-top-color: transparent;
+		border-left-color: $gray-light;
+	}
+
+	.sub-menu {
+		border-bottom: 1px solid $gray-light;
+		margin-left: -1px;
+		a {
+			@include font-size(13);
+			background: $white-darker;
+			color: #666;
+			border-left: 1px solid #e3e3e3;
+			border-right: 1px solid #e3e3e3;
+			padding: 10px 18px;
+			text-transform: none;
+			&:hover {
+				background: #fff298;
+				text-shadow: none;
+			}
+		}
+	}
+
+}
+
+.tinynav {
+	@include pxrem(margin-bottom, 14px);
+	width: 100%;
+
+	@include min-screen(320px) {
+		display: block;
+	}
+
+	@include min-screen(601px) {
+		display: none;
+	}
+
+}
+
+/**
+ * Breadcrumbs
+ */
+.breadcrumbs {
+	@include font-size(12);
+	@include pxrem(margin-bottom, 20px);
+	color: $gray-darker;
+
+	.sep {
+		@include pxrem(padding, 0 5px);
+		color: $gray;
+	}
+}
