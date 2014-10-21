@@ -232,6 +232,9 @@ global $page, $pages, $numpages;
 <?php get_template_part('partials/content', 'ad'); ?>
 
 <?php if ($page > 3) : ?>
+    <?php
+    /*
+    ?>
     <div class="col-md-4 col-xs-12 floating-share-bar">
         <div class="fb-share-button col-xs-7 text-center" style="border-radius: 5px; background-color: #2a5697; padding: 4px 6px; font-size: 23px">
             <a href id="fb-floating-share">
@@ -256,4 +259,6 @@ global $page, $pages, $numpages;
             })
         })
     </script>
+    */
+    ?>
 <?php endif ?>
