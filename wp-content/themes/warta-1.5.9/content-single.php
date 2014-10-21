@@ -19,6 +19,8 @@ global $page, $pages, $numpages;
 
 <?php // MOBILE ADs ?>
 <?php if ($userAgent->isMobile() && ($page < $numpages) && !$userAgent->isTablet()) : ?>
+    <?php
+    /*
     <div style="text-align:center; padding-top: 5px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -31,9 +33,12 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-
+    */
+?>
 <?php // TABLET ADs ?>
 <?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
+    <?php
+    /*
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- leaderboard -->
@@ -45,9 +50,12 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-
+    */
+?>
 <?php // DESKTOP ADs ?>
 <?php elseif ($page < $numpages) :?>
+    <?php
+    /*
     <div class="adunit">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- leaderboard -->
@@ -59,6 +67,8 @@ global $page, $pages, $numpages;
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+    */
+    ?>
 <?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
@@ -123,7 +133,9 @@ global $page, $pages, $numpages;
 
 <?php // MOBILE ADs ?>
 <?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
+    <?php
 
+    /*
     <div style="text-align:center; padding-bottom:8px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -138,10 +150,12 @@ global $page, $pages, $numpages;
     </div>
 
     <hr style="padding-bottom: 15px;">
-
+    */
+?>
 <?php // TABLET ADs ?>
 <?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
-    <!-- 336 x 280 Bottom -->
+    <?php
+/*    <!-- 336 x 280 Bottom -->
     <div style="text-align:center; padding-top:17px;">
         <div style="font-size: 10px;">Advertisement</div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -155,10 +169,11 @@ global $page, $pages, $numpages;
         </script>
     </div>
     <hr>
-
+*/
+?>
 <?php // DESKTOP ADs ?>
 <?php elseif ($page < $numpages) : ?>
-
+<?php /*
     <!-- 336 x 280 Bottom -->
     <div style="text-align:center; padding-top:17px;">
         <div style="font-size: 10px;">Advertisement</div>
@@ -173,7 +188,7 @@ global $page, $pages, $numpages;
         </script>
     </div>
     <hr>
-
+*/?>
 <?php endif; ?>
 
 
