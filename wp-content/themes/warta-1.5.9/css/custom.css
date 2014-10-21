@@ -179,16 +179,21 @@
   position: relative;
 }
 
+.page-link-nextprev.link-prev {
+    float: left;
+}
+
+.page-link-nextprev.link-next {
+    float: right;
+}
+
 .next {
   width:30%;
   background-color: #ff9600 !important;
-  color: black;
-  padding-left:15px;
-  padding-right:15px;
-  border-radius: 10px;
   color: white;
-  font-size: 20px;
-  
+  font-size: 24px;
+  padding: 7px 12px;
+  border-radius: 3px;
 }
 
 .page-link-nextprev a:hover {
@@ -198,13 +203,10 @@
 .previous {
   /* width:33%; */
   background-color: #ff9600 !important;
-  color: black;
-  padding-left:15px;
-  padding-right:15px;
-  border-radius: 10px;
   color: white;
-  font-size: 20px;
-  
+  font-size: 24px;
+  padding: 7px 12px;
+  border-radius: 3px;
 }
 
  

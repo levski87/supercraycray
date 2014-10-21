@@ -181,10 +181,10 @@ global $page, $pages, $numpages;
 <?php $maxpages = $wp_query->max_num_pages; ?>
 
 <?php if ($numpages > 1) : ?>
-    <div class="page-link-container" style="text-align: center !important;">
+    <div class="page-link-container" style="text-align: center !important; margin-bottom: 55px;">
         <?php
         // This shows the Previous link
-        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">',
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev link-prev" style="display: inline-block !important;">',
                               'after' => '</div>', 'previouspagelink' => '<span class="previous">Back</span>', 'nextpagelink' => '',
                               'next_or_number' => 'next' ) );
         ?>
@@ -195,7 +195,7 @@ global $page, $pages, $numpages;
         </div>
         <?php
         // This shows the Next link
-        wp_link_pages( array( 'before' => '<div class="page-link-nextprev" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '',
+        wp_link_pages( array( 'before' => '<div class="page-link-nextprev link-next" style="display: inline-block !important;">', 'after' => '</div>', 'previouspagelink' => '',
                               'nextpagelink' => '<span class="next">Next</span>', 'next_or_number' => 'next' ) );
         ?>
     </div>
