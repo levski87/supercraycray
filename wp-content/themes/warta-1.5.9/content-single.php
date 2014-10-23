@@ -216,14 +216,27 @@ global $page, $pages, $numpages;
     </div>
 <?php endif; ?>
 
-<?php if ($userAgent->isMobile() && !$userAgent->isTablet()) : ?>
     <div class="sswpds-social-wrap col-lg-6 col-lg-offset-3" style="padding: 17px 0px;">
         <a href="<?php echo esc_url('http://www.facebook.com/sharer.php?u='
             .get_permalink()); ?>" target="_blank">
             <i class="fa fa-facebook-square"></i> Share on Facebook
         </a>
     </div>
-<?php endif; ?>
+
+<hr>
+
+
+    <script type="text/javascript">
+        ( function() {
+            if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+            var unit = {"calltype":"async[2]","publisher":"supercraycray","width":550,"height":250,"sid":"Chitika Default"};
+            var placement_id = window.CHITIKA.units.length;
+            window.CHITIKA.units.push(unit);
+            document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+        }());
+    </script>
+    <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+
 
 <div style="margin-top: 20px;">
     <?php comments_template('/comments-facebook.php'); ?>
