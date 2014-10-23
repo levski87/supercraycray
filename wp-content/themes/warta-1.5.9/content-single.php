@@ -71,6 +71,14 @@ global $page, $pages, $numpages;
     ?>
 <?php endif; ?>
 
+    <script type="text/javascript">
+        ad_idzone = "1158748";
+        ad_width = "728";
+        ad_height = "90";
+    </script>
+    <script type="text/javascript" src="https://ads.exoclick.com/ads.js"></script>
+    <noscript><a href="http://main.exoclick.com/img-click.php?idzone=1158748" target="_blank"><img src="https://syndication.exoclick.com/ads-iframe-display.php?idzone=1158748&output=img&type=728x90" width="728" height="90"></a></noscript>
+
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
                 'article-large entry-content clearfix ' . 
