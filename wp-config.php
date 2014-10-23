@@ -17,7 +17,6 @@ $environments = array(
         'kirill',
         'Denis-PC',
         'kirillMac.local',
-        'Simon-Notebook',
     ),
 );
 
@@ -117,7 +116,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /**
  * Disable all automatic updates
@@ -150,7 +149,7 @@ $mobileDetect = new Mobile_Detect();
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-    define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
