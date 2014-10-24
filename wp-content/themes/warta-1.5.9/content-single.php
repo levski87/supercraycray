@@ -19,6 +19,8 @@ global $page, $pages, $numpages;
 
 <?php // MOBILE ADs ?>
 <?php if ($userAgent->isMobile() && ($page < $numpages) && !$userAgent->isTablet()) : ?>
+    <!-- Size: 320x50 -->
+    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/320x50.js" type="text/javascript"></script>
     <?php
     /*
     <div style="text-align:center; padding-top: 5px;">
@@ -37,6 +39,8 @@ global $page, $pages, $numpages;
 ?>
 <?php // TABLET ADs ?>
 <?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
+    <!-- Size: 728x90 -->
+    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/728x90.js" type="text/javascript"></script>
     <?php
     /*
     <div class="adunit">
@@ -54,6 +58,8 @@ global $page, $pages, $numpages;
 ?>
 <?php // DESKTOP ADs ?>
 <?php elseif ($page < $numpages) :?>
+    <!-- Size: 728x90 -->
+    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/728x90.js" type="text/javascript"></script>
     <?php
     /*
     <div class="adunit">
@@ -70,14 +76,6 @@ global $page, $pages, $numpages;
     */
     ?>
 <?php endif; ?>
-
-    <script type="text/javascript">
-        ad_idzone = "1158748";
-        ad_width = "728";
-        ad_height = "90";
-    </script>
-    <script type="text/javascript" src="https://ads.exoclick.com/ads.js"></script>
-    <noscript><a href="http://main.exoclick.com/img-click.php?idzone=1158748" target="_blank"><img src="https://syndication.exoclick.com/ads-iframe-display.php?idzone=1158748&output=img&type=728x90" width="728" height="90"></a></noscript>
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
@@ -233,24 +231,25 @@ global $page, $pages, $numpages;
 
 <hr>
 
+    <?php // MOBILE ADs below arrows?>
+<?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
+    <!-- Size: 300x250 -->
+    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/300x250.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        ( function() {
-            if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-            var unit = {"calltype":"async[2]","publisher":"supercraycray","width":550,"height":250,"sid":"Chitika Default"};
-            var placement_id = window.CHITIKA.units.length;
-            window.CHITIKA.units.push(unit);
-            document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-        }());
-    </script>
-    <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+    <?php // TABLET ADs below arrows ?>
+<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
 
+    <?php // DESKTOP ADs below arrows ?>
+<?php elseif ($page < $numpages) : ?>
 
-<div style="margin-top: 20px;">
-    <?php comments_template('/comments-facebook.php'); ?>
-</div>
+<?php endif; ?>
+
 
 <?php get_template_part('partials/content', 'ad'); ?>
+
+    <div style="margin-top: 20px;">
+        <?php comments_template('/comments-facebook.php'); ?>
+    </div>
 
 <?php if ($page > 3) : ?>
     <?php
