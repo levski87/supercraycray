@@ -633,7 +633,7 @@ return array(
 	'widget.pagespeed.key' => '',
 	'notes.wp_content_changed_perms' => true,
 	'notes.wp_content_perms' => true,
-	'notes.theme_changed' => false,
+	'notes.theme_changed' => true,
 	'notes.wp_upgraded' => false,
 	'notes.plugins_updated' => false,
 	'notes.cdn_upload' => true,
