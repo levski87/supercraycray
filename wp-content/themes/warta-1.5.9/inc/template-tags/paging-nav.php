@@ -109,9 +109,9 @@ function warta_paging_nav() {
          * ---------------------------------------------------------------------
          */
 	if ( get_next_posts_link() ) {
-		printf( '<li>%s</li>' . "\n", get_next_posts_link('<i class="fa fa-angle-double-right"></i>') );
+		printf( '<li class="next-posts">%s</li>' . "\n", get_next_posts_link('<i class="fa fa-angle-double-right"></i>') );
         } else {
-                printf( '<li><a href="%s"><i class="fa fa-angle-double-right"></i></a></li>' . "\n", esc_url( get_pagenum_link( $max ) ), $max );
+                printf( '<li class="next-posts"><a href="%s"><i class="fa fa-angle-double-.navbarright"></i></a></li>' . "\n", esc_url( get_pagenum_link( $max ) ), $max );
         }
         
 	echo '</ul>' . "\n";

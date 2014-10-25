@@ -23,25 +23,25 @@ switch ($format) {
                 break;
 }
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( "article-large $no_image" ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( "col-sm-4 article-large $no_image" ); ?>>
 <?php   // Display featured image and title
-        if( has_post_thumbnail() ) : 
-                warta_featured_image();
-        elseif($format == 'image' && !!$match_image) :
-                warta_featured_image( $match_image );
-        elseif($format == 'gallery' && !!$match_gallery) :
-                $attachment_src = wp_get_attachment_image_src( $match_gallery['image_ids'][0], 'huge');        
-                warta_featured_image( array(
-                        'image'     => wp_get_attachment_image( $match_gallery['image_ids'][0], 'large' ),
-                        'image_url' => $attachment_src[0]
-                ) );
-        else:
+        if( has_post_thumbnail() ) :?> 
+                <div class="frame thick clearfix">
+
+                        <a href="<?php the_permalink(); ?>" 
+                           title="<?php the_title() ?>">
+                                <div class='home-image-container-small'>
+<?php                                   echo get_the_post_thumbnail( NULL, array(350,190) ); ?>
+                                </div>
+                                <div class='home-image-overlay-small' id='title-text'><?php the_title(); ?></div>
+                        </a><!--thumbnail image-->
+                </div><!--.frame-->                            
+<?php   else:
                 switch ($format) :
                         case 'audio':
                         case 'video':
                         case 'image':
                         case 'gallery': ?>
-                                <a href="<?php the_permalink() ?>" class="title"><h4><?php the_title() ?></h4></a>
 <?php                           echo warta_post_meta();
                                 if( !!$featured_media ) : ?>
                                         <div class="featured-media"><?php echo $featured_media ?></div>
@@ -56,20 +56,5 @@ switch ($format) {
 <?php                           echo warta_post_meta();
                                 break;
                 endswitch; 
-        endif;
-        
-        // Display content
-        if($format == 'aside') {
-                $display_more = FALSE;
-                the_content();
-        } else if($format == 'quote' && !!$matches_blockquote) {
-                $content        = apply_filters( 'the_content', get_the_content() );
-                $display_more   = strlen(trim($content)) > strlen($matches_blockquote);
-                echo $matches_blockquote;
-        } else {
-                        echo "<p>" . warta_the_excerpt_max_charlength( isset($friskamax_warta['archive_excerpt_length']) ? $friskamax_warta['archive_excerpt_length'] : 320 ) . "</p>";
-        }
-
-        // Display footer
-        warta_article_footer( array('read_more' => $display_more) ) ?>                                
+        endif;?>                             
 </article>
