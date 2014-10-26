@@ -66,8 +66,11 @@ global $friskamax_warta, $friskamax_warta_var;
 <?php wp_footer(); ?>
 
 <?php //gumgum ?>
-<script>ggv2id='e466273c';</script>
-<script src="//g2.gumgum.com/javascripts/ggv2.js"></script>
+<?php if (!is_home()) : ?>
+    <script>ggv2id='e466273c';</script>
+    <script src="//g2.gumgum.com/javascripts/ggv2.js"></script>
+<?php endif; ?>
+
 
 </body>
 </html>
