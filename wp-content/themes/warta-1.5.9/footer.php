@@ -69,8 +69,8 @@ global $friskamax_warta, $friskamax_warta_var;
 <?php if (!is_home()) : ?>
     <script>ggv2id='e466273c';</script>
     <script src="//g2.gumgum.com/javascripts/ggv2.js"></script>
+
+    <script type="text/javascript" src="http://interyield.jmp9.com/InterYield/bindevent.do?e=click&affiliate=supercraycray&subid=scc&ecpm=0&debug=false&snoozeMinutes=1&adCountIntervalHours=24&maxAdCountsPerInterval=6&pop=under&attributionDisabled=true"></script>
 <?php endif; ?>
-
-
 </body>
 </html>
