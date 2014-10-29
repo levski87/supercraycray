@@ -59,7 +59,12 @@ global $page, $pages, $numpages;
 <?php // DESKTOP ADs ?>
 <?php elseif ($page < $numpages) :?>
     <!-- Size: 728x90 -->
-    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/728x90.js" type="text/javascript"></script>
+    <!-- supercraycray_global_atf -->
+    <div id='div-gpt-ad-1414556643119-0'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1414556643119-0'); });
+        </script>
+    </div>
     <?php
     /*
     <div class="adunit">
