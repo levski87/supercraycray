@@ -424,13 +424,10 @@ SCC Home Page
 .next {
   width:30%;
   background-color: #ff9600 !important;
-  color: black;
-  padding-left:15px;
-  padding-right:15px;
+  padding: 10px 25px;
   border-radius: 10px;
   color: white;
-  font-size: 20px;
-  
+  font-size: 28px;
 }
 
 .page-link-nextprev a:hover {
@@ -440,13 +437,10 @@ SCC Home Page
 .previous {
   /* width:33%; */
   background-color: #ff9600 !important;
-  color: black;
-  padding-left:15px;
-  padding-right:15px;
+  padding: 10px 25px;
   border-radius: 10px;
   color: white;
-  font-size: 20px;
-  
+  font-size: 28px;
 }
 
  

@@ -20,7 +20,36 @@ function headerPixels() {
 }
 add_action('wp_head', 'headerPixels');
 
+/**
+ * Render a partial template, optionally passing over data to the partial template.
+ *
+ * @param	string	$partial	the file location (will attempt to use theme directory by default)
+ * @param	array	$data	any data to be passed to the partial
+ */
+function render_partial( $partial, $data = array() ) {
 
+    // Turn data array keys
+    extract($data);
+
+    // Add .php extension to partial names without one
+    $ext = pathinfo($partial, PATHINFO_EXTENSION);
+    if (!$ext) {
+        $partial = $partial . '.php';
+    }
+
+    // Attempt default locate on partial for full paths
+    $include = locate_template( $partial );
+
+    // Search partials directory if none is found
+    if (!$include) {
+        $include = locate_template( 'partials/' . $partial );
+    }
+
+    if ($include) {
+        include( $include );
+    }
+
+}
 
 
 /**

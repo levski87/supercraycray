@@ -17,70 +17,8 @@ $userAgent = new Mobile_Detect();
 global $page, $pages, $numpages;
 ?>
 
-<?php // MOBILE ADs ?>
-<?php if ($userAgent->isMobile() && ($page < $numpages) && !$userAgent->isTablet()) : ?>
-    <!-- Size: 320x50 -->
-    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/320x50.js" type="text/javascript"></script>
-    <?php
-    /*
-    <div style="text-align:center; padding-top: 5px;">
-        <div style="font-size: 10px;">Advertisement</div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 300x100 Mobile Ad -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:320px;height:100px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5745754243"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    */
-?>
-<?php // TABLET ADs ?>
-<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
-    <!-- Size: 728x90 -->
-    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/728x90.js" type="text/javascript"></script>
-    <?php
-    /*
-    <div class="adunit">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- leaderboard -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="2271573049"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    */
-?>
-<?php // DESKTOP ADs ?>
-<?php elseif ($page < $numpages) :?>
-    <!-- Size: 728x90 -->
-    <!-- supercraycray_global_atf -->
-    <div id='div-gpt-ad-1414556643119-0'>
-        <script type='text/javascript'>
-            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1414556643119-0'); });
-        </script>
-    </div>
-    <?php
-    /*
-    <div class="adunit">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- leaderboard -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="2271573049"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    */
-    ?>
-<?php endif; ?>
+<?php /* get ads for above the fold */ ?>
+<?php render_partial('partials/ads-atf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); ?>
 
 <article id="post-<?php the_ID(); ?>" style="border-bottom: none !important;" 
 <?php   post_class(
@@ -142,67 +80,6 @@ global $page, $pages, $numpages;
  ?>
 </article>
 
-<?php // MOBILE ADs ?>
-<?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
-    <?php
-
-    /*
-    <div style="text-align:center; padding-bottom:8px;">
-        <div style="font-size: 10px;">Advertisement</div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 300x250 Mobile Ad -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:300px;height:250px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="9636387047"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
-    <hr style="padding-bottom: 15px;">
-    */
-?>
-<?php // TABLET ADs ?>
-<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
-    <?php
-/*    <!-- 336 x 280 Bottom -->
-    <div style="text-align:center; padding-top:17px;">
-        <div style="font-size: 10px;">Advertisement</div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 336 x 280 Bottom -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:336px;height:280px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5947354244"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <hr>
-*/
-?>
-<?php // DESKTOP ADs ?>
-<?php elseif ($page < $numpages) : ?>
-<?php /*
-    <!-- 336 x 280 Bottom -->
-    <div style="text-align:center; padding-top:17px;">
-        <div style="font-size: 10px;">Advertisement</div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 336 x 280 Bottom -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:336px;height:280px"
-             data-ad-client="ca-pub-4528087481844577"
-             data-ad-slot="5947354244"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <hr>
-*/?>
-<?php endif; ?>
-
-
 <?php // Link Pages // ?>
 <?php $maxpages = $wp_query->max_num_pages; ?>
 
@@ -236,18 +113,8 @@ global $page, $pages, $numpages;
 
 <hr>
 
-    <?php // MOBILE ADs below arrows?>
-<?php if ($userAgent->isMobile() && !$userAgent->isTablet() && ($page < $numpages)) : ?>
-    <!-- Size: 300x250 -->
-    <script src="http://ads-by.madadsmedia.com/tags/30560/11150/async/300x250.js" type="text/javascript"></script>
-
-    <?php // TABLET ADs below arrows ?>
-<?php elseif ($userAgent->isTablet() && ($page < $numpages)) : ?>
-
-    <?php // DESKTOP ADs below arrows ?>
-<?php elseif ($page < $numpages) : ?>
-
-<?php endif; ?>
+<?php /* get ads for below the fold */ ?>
+<?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); ?>
 
 
 <?php get_template_part('partials/content', 'ad'); ?>
