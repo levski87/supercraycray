@@ -23,6 +23,9 @@ global  $friskamax_warta,
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+    <?php render_partial('partials/header-dfp'); ?>
+
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53eaeb1319248feb"></script>
     <script type="text/javascript">
