@@ -17,6 +17,7 @@ $environments = array(
         'kirill',
         'Denis-PC',
         'kirillMac.local',
+        'denis-Inspiron-N5110',
     ),
 );
 
@@ -70,6 +71,7 @@ define('DB_COLLATE', '');
 
 define( 'AWS_ACCESS_KEY_ID', $_ENV['AWS_ACCESS_KEY_ID'] );
 define( 'AWS_SECRET_ACCESS_KEY', $_ENV['AWS_SECRET_KEY']);
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
