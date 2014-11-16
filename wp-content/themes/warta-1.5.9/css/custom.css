@@ -423,7 +423,7 @@ SCC Home Page
 
 .next {
   width:30%;
-  background-color: #ff9600 !important;
+  background-color: #cc0000 !important;
   padding: 10px 25px;
   border-radius: 10px;
   color: white;
@@ -436,7 +436,7 @@ SCC Home Page
 
 .previous {
   /* width:33%; */
-  background-color: #ff9600 !important;
+  background-color: #cc0000 !important;
   padding: 10px 25px;
   border-radius: 10px;
   color: white;
@@ -548,4 +548,8 @@ SCC Home Page
     padding: 10px 6px;
     min-height: 40px;
     max-height: 40px;
+}
+
+#main-content {
+  float: right !important;
 }
