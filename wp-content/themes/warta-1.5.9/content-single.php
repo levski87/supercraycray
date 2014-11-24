@@ -114,8 +114,13 @@ global $page, $pages, $numpages;
 <hr>
 
 <?php /* get ads for below the fold */ ?>
+
+<?php /*
 <?php render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); ?>
 
+*/
+
+?>
 
 <?php get_template_part('partials/content', 'ad'); ?>
 
