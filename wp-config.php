@@ -18,6 +18,7 @@ $environments = array(
         'Denis-PC',
         'kirillMac.local',
         'denis-Inspiron-N5110',
+        'denis-Lenovo-Yoga-2-Pro',
     ),
 );
 
