@@ -13,7 +13,9 @@ global  $friskamax_warta,
 
 ?><!DOCTYPE html>
 <html
-    <?php   language_attributes();
+    <?php   
+echo "hello";
+    language_attributes();
     echo isset( $friskamax_warta_var['html_id'] ) ? " id='{$friskamax_warta_var['html_id']}' " : ''; ?>
     class="<?php warta_html_class() ?>"
     >
@@ -24,7 +26,7 @@ global  $friskamax_warta,
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-    <?php render_partial('partials/header-dfp'); ?>
+    <?php  render_partial('partials/header-dfp'); ?>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53eaeb1319248feb"></script>
