@@ -19,7 +19,30 @@ get_header();
 
 </header>
 
+<?php /* Content.Ad */ ?>
+<div class="container">
+          <div id="contentad33215"></div>
+<script type="text/javascript">
+    (function() {
+        var params =
+        {
+            id: "2c5d04ad-d7d4-4e84-9ee9-c45ee9c579c5",
+            d:  "c3VwZXJjcmF5Y3JheS5jb20=",
+            wid: "33215",
+            cb: (new Date()).getTime()
+        };
 
+        var qs="";
+        for(var key in params){qs+=key+"="+params[key]+"&"}
+        qs=qs.substring(0,qs.length-1);
+        var s = document.createElement("script");
+        s.type= 'text/javascript';
+        s.src = "http://api.content.ad/Scripts/widget.aspx?" + qs;
+        s.async = true;
+        document.getElementById("contentad33215").appendChild(s);
+    })();
+</script>
+</div>
 
 <?php
 warta_page_title(
