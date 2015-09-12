@@ -19,8 +19,6 @@ get_header();
 
 </header>
 
-<?php render_partial('partials/ads-dfp-atf'); ?>
-
 <?php
 warta_page_title(
     get_post_format() == 'aside' ? '': get_the_title(),
