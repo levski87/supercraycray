@@ -16,7 +16,7 @@
 
 <script type='text/javascript'>
   googletag.cmd.push(function() {
-var mappingTop = googletag.sizeMapping().addSize([765, 300], [[970, 66], [970, 250], [970, 90], [728, 90]]).addSize([0, 0], [[320, 50], [300,100], [300, 50]]).build();
+var mappingTop = googletag.sizeMapping().addSize([765, 300], [[970, 66], [970, 250], [970, 90], [728, 90]]).addSize([0, 0], [[320, 50], [300,100], [320,100], [300,250], [300, 50]]).build();
 
     googletag.defineSlot('/38082785/supercraycray_atf_leaderboard', [[320, 100], [300, 100], [300, 250], [728, 90], [320, 50], [970, 90]], 'div-gpt-ad-1442092146575-0').defineSizeMapping(mappingTop).addService(googletag.pubads());
     googletag.defineSlot('/38082785/supercracray_box_btf', [[300, 250], [336, 280]], 'div-gpt-ad-1442092146575-1').addService(googletag.pubads());
