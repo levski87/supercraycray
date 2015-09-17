@@ -151,14 +151,3 @@ global $page, $pages, $numpages;
         })
     </script>
 <?php endif ?>
-
-<?php if ($page = 2 { ?>
-<!-- /38082785/SuperCrayCray_OOP -->
-<div id='div-gpt-ad-1442452357030-0'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
-</script>
-</div>
-<?php } ?>
-
-<?php get_footer(); ?>
