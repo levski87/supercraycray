@@ -151,3 +151,22 @@ global $page, $pages, $numpages;
         })
     </script>
 <?php endif ?>
+
+<?php /* Out Of Page Ad Unit */ ?> 
+
+<?php if ($page >2 && $maxpages > 1) { ?>
+<!-- /38082785/SuperCrayCray_OOP -->
+<div id='div-gpt-ad-1442452357030-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
+</script>
+</div>
+
+else { 
+<div id='div-gpt-ad-1442452357030-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
+</script>
+</div>
+}
+<?php } ?>
