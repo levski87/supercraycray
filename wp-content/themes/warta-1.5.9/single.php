@@ -106,4 +106,26 @@ warta_page_title(
     </div>
 </div><!--#content-->
 
+<script type="text/javascript">
+window._ttf = window._ttf || [];
+_ttf.push({
+       pid          : 38242
+       ,lang        : "en"
+       ,slot        : '#main-nav .container'
+       ,format      : "inboard"
+       ,mobile      : false
+       ,minSlot     : 1
+       ,components  : { skip: {delay : 0}}
+       ,css         : "margin: 15px auto; max-width: 980px"
+});
+
+(function (d) {
+        var js, s = d.getElementsByTagName('script')[0];
+        js = d.createElement('script');
+        js.async = true;
+        js.src = '//cdn.teads.tv/media/format.js';
+        s.parentNode.insertBefore(js, s);
+})(window.document);
+</script>
+
 <?php get_footer(); ?>
