@@ -163,5 +163,47 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0');
 
 <?php 
 $postid = get_the_id();
-echo $postid;
-?>
+
+if ($postid == 8769) { ?>
+<script type="text/javascript">
+window._ttf = window._ttf || [];
+_ttf.push({
+       pid          : 38241
+       ,lang        : "en"
+       ,slot        : '#main-content .post > p'
+       ,format      : "inread"
+       ,components  : { skip: {delay : 0}}
+       ,css         : "margin: 15px 0px;"
+});
+
+(function (d) {
+        var js, s = d.getElementsByTagName('script')[0];
+        js = d.createElement('script');
+        js.async = true;
+        js.src = '//cdn.teads.tv/media/format.js';
+        s.parentNode.insertBefore(js, s);
+})(window.document);
+</script>
+
+<script type="text/javascript">
+window._ttf = window._ttf || [];
+_ttf.push({
+       pid          : 38242
+       ,lang        : "en"
+       ,slot        : '#main-nav .container'
+       ,format      : "inboard"
+       ,mobile      : false
+       ,minSlot     : 1
+       ,components  : { skip: {delay : 0}}
+       ,css         : "margin: 15px auto; max-width: 980px"
+});
+
+(function (d) {
+        var js, s = d.getElementsByTagName('script')[0];
+        js = d.createElement('script');
+        js.async = true;
+        js.src = '//cdn.teads.tv/media/format.js';
+        s.parentNode.insertBefore(js, s);
+})(window.document);
+</script>
+<?php } ?>
