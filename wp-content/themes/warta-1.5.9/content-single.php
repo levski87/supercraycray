@@ -168,5 +168,5 @@ else {
 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
 </script>
 </div>
-}
+}   
 <?php } ?>
