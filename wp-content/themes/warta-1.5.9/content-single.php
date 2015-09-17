@@ -119,6 +119,15 @@ global $page, $pages, $numpages;
 <?php /* render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); */ ?>
 <?php render_partial('partials/ads-dfp-btf'); ?>
 
+<?php if ($page > 2) : ?>
+<!-- /38082785/SuperCrayCray_OOP -->
+<div id='div-gpt-ad-1442452357030-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
+</script>
+</div>
+<?php endif ?>
+
 
 <?php get_template_part('partials/content', 'ad'); ?>
 
@@ -150,13 +159,4 @@ global $page, $pages, $numpages;
             })
         })
     </script>
-<?php endif ?>
-
-<?php if ($page > 2) : ?>
-<!-- /38082785/SuperCrayCray_OOP -->
-<div id='div-gpt-ad-1442452357030-0'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0'); });
-</script>
-</div>
 <?php endif ?>
