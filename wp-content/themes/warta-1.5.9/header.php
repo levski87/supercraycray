@@ -25,7 +25,6 @@ echo "hello";
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <script src="http://adg.bzgint.com/pub/adg/data.js"></script>
 
     <?php  render_partial('partials/header-dfp'); ?>
 
