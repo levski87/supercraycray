@@ -13,7 +13,6 @@
     node.parentNode.insertBefore(gads, node);
   })();
 </script>
-
 <script type='text/javascript'>
   googletag.cmd.push(function() {
 var mappingTop = googletag.sizeMapping().addSize([765, 300], [[728, 90]]).addSize([0, 0], [[320, 50], [300,100], [320,100], [300,250], [300, 50]]).build();
