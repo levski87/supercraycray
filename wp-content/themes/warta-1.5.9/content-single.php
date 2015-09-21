@@ -165,15 +165,17 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0');
 $postid = get_the_id();
 
 if ($postid == 8769) { ?>
+
 <script type="text/javascript">
 window._ttf = window._ttf || [];
 _ttf.push({
        pid          : 38241
        ,lang        : "en"
-       ,slot        : '#main-content .post > p'
+       ,slot        : '.post .wp-caption > p'
        ,format      : "inread"
+       ,minSlot     : 1
        ,components  : { skip: {delay : 0}}
-       ,css         : "margin: 15px 0px;"
+       ,css         : "margin: 9px 0px;padding: 0px 10px 0px 0px;"
 });
 
 (function (d) {
@@ -207,3 +209,4 @@ _ttf.push({
 })(window.document);
 </script>
 <?php } ?>
+
