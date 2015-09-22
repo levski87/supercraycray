@@ -161,11 +161,6 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0');
     </script>
 <?php endif ?>
 
-<?php 
-$postid = get_the_id();
-
-if ($postid == 8769) { ?>
-
 <script type="text/javascript">
 window._ttf = window._ttf || [];
 _ttf.push({
@@ -208,5 +203,3 @@ _ttf.push({
         s.parentNode.insertBefore(js, s);
 })(window.document);
 </script>
-<?php } ?>
-
