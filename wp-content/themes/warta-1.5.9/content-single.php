@@ -84,7 +84,7 @@ global $page, $pages, $numpages;
 <?php /* get ads for below the fold */ ?>
 
 <?php /* render_partial('partials/ads-btf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); */ ?>
-<?php render_partial('partials/ads-dfp-btf'); ?>
+<?php render_partial('partials/ads-dfp-btf', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); ?>
 
 <?php if ($page > 2) : ?>
 <!-- /38082785/SuperCrayCray_OOP -->
@@ -127,6 +127,8 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442452357030-0');
     </div>
 
 <hr>
+
+<?php render_partial('partials/mobile-ads-dfp-btf.php', ['page' => $page, 'numpages' => $numpages, 'userAgent' => $userAgent]); ?>
 
 
 <?php get_template_part('partials/content', 'ad'); ?>
