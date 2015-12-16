@@ -63,6 +63,19 @@ global $friskamax_warta, $friskamax_warta_var;
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="fb-root"></div>
+
+
+<script type='text/javascript'>
+(function(){
+  var spoutjs=document.createElement('script'),firstjs=document.getElementsByTagName('script')[0];
+  spoutjs.async=1;
+  spoutjs.src='//cdn.spoutable.com/9aae0955-48d6-4214-b69b-e7ce1ab6a109/spoutable.js';
+  firstjs.parentNode.insertBefore(spoutjs,firstjs)
+})();
+</script>
+
+
+
 <?php wp_footer(); ?>
 
 <?php //gumgum ?>
