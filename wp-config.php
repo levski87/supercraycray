@@ -132,7 +132,7 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
  * the Plugin and Theme editor (i.e. you don't need to set DISALLOW_FILE_MODS and
  * DISALLOW_FILE_EDIT, as on its own DISALLOW_FILE_MODS will have the same effect).
  */
-define('DISALLOW_FILE_MODS', true);
+define('DISALLOW_FILE_MODS', false);
 
 /**
  * Disable all core updates:
