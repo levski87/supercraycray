@@ -11,12 +11,12 @@ function batcache_cancel() {
 
 class batcache {
 	// This is the base configuration. You can edit these variables or move them into your wp-config.php file.
-	var $max_age =  1800; // Expire batcache items aged this many seconds (zero to disable batcache)
+	var $max_age =  18000; // Expire batcache items aged this many seconds (zero to disable batcache)
 	
 	var $remote  =    0; // Zero disables sending buffers to remote datacenters (req/sec is never sent)
 	
-	var $times   =    2; // Only batcache a page after it is accessed this many times... (two or more)
-	var $seconds =  120; // ...in this many seconds (zero to ignore this and use batcache immediately)
+	var $times   =    1; // Only batcache a page after it is accessed this many times... (two or more)
+	var $seconds =  0; // ...in this many seconds (zero to ignore this and use batcache immediately)
 	
 	var $group   = 'batcache'; // Name of memcached group. You can simulate a cache flush by changing this.
 	
